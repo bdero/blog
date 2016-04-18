@@ -8,7 +8,7 @@ Summary: I figured I'd start with something classic.
 
 I figured I'd start with something classic. <!--more-->
 
-<iframe src="http://cheesekeg.com/listings/projects/ivank-tests/hanoi/" width="100%" height="465" frameborder="no"></iframe>
+<iframe src="http://bdero.me/ivank-tests/hanoi/" width="100%" height="465" frameborder="no"></iframe>
 <h5><strong>If you don't see anything in the frame above, then either <a title="Check if your browser supports WebGL" href="http://get.webgl.org/" target="_blank">your browser doesn't support WebGL</a>, or your graphics driver is not sufficient for initializing a WebGL context.</strong></h5>
 The source code is available on <a title="Tower of Hanoi Solver source code" href="http://git.cheesekeg.com/?p=ivank-tests.git;a=history;f=hanoi;hb=HEAD" target="_blank">git.cheesekeg.com</a>.
 
