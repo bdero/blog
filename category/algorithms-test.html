@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>bran's blog</title>
-        <link rel="stylesheet" href="http://bdero.me/blog/theme/css/main.css" />
+        <title>bran's blog - Algorithms, test</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
 
         <!--[if IE]>
             <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -12,37 +12,34 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://bdero.me/blog/">bran's blog </a></h1>
+                <h1><a href="/">bran's blog </a></h1>
                 <nav><ul>
-                    <li><a href="http://bdero.me/blog/category/algorithms.html">Algorithms</a></li>
+                    <li class="active"><a href="/category/algorithms-test.html">Algorithms, test</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://bdero.me/blog/tower-of-hanoi.html">Tower of Hanoi</a></h1>
+                    <h1 class="entry-title"><a href="/tower-of-hanoi.html">Tower of Hanoi</a></h1>
 <footer class="post-info">
         <abbr class="published" title="2013-09-22T05:53:00-04:00">
                 Published: Sun 22 September 2013
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="http://bdero.me/blog/author/brandon-derosier.html">Brandon DeRosier</a>
+                By                         <a class="url fn" href="/author/brandon-derosier.html">Brandon DeRosier</a>
         </address>
-<p>In <a href="http://bdero.me/blog/category/algorithms.html">Algorithms</a>.</p>
-<p>tags: <a href="http://bdero.me/blog/tag/2d.html">2d</a> <a href="http://bdero.me/blog/tag/algorithm.html">algorithm</a> <a href="http://bdero.me/blog/tag/browser.html">browser</a> <a href="http://bdero.me/blog/tag/canvas.html">canvas</a> <a href="http://bdero.me/blog/tag/classic.html">classic</a> <a href="http://bdero.me/blog/tag/html5.html">html5</a> <a href="http://bdero.me/blog/tag/ivankjs.html">ivank.js</a> <a href="http://bdero.me/blog/tag/javascript.html">javascript</a> <a href="http://bdero.me/blog/tag/minimal.html">minimal</a> <a href="http://bdero.me/blog/tag/puzzle.html">puzzle</a> <a href="http://bdero.me/blog/tag/recursion.html">recursion</a> <a href="http://bdero.me/blog/tag/tower-of-hanoi.html">tower of hanoi</a> <a href="http://bdero.me/blog/tag/tweener.html">tweener</a> <a href="http://bdero.me/blog/tag/vector-graphics.html">vector graphics</a> <a href="http://bdero.me/blog/tag/visualization.html">visualization</a> <a href="http://bdero.me/blog/tag/webgl.html">webgl</a> </p>
+<p>In <a href="/category/algorithms-test.html">Algorithms, test</a>.</p>
+<p>tags: <a href="/tag/2d.html">2d</a> <a href="/tag/algorithm.html">algorithm</a> <a href="/tag/browser.html">browser</a> <a href="/tag/canvas.html">canvas</a> <a href="/tag/classic.html">classic</a> <a href="/tag/html5.html">html5</a> <a href="/tag/ivankjs.html">ivank.js</a> <a href="/tag/javascript.html">javascript</a> <a href="/tag/minimal.html">minimal</a> <a href="/tag/puzzle.html">puzzle</a> <a href="/tag/recursion.html">recursion</a> <a href="/tag/tower-of-hanoi.html">tower of hanoi</a> <a href="/tag/tweener.html">tweener</a> <a href="/tag/vector-graphics.html">vector graphics</a> <a href="/tag/visualization.html">visualization</a> <a href="/tag/webgl.html">webgl</a> </p>
 </footer><!-- /.post-info --><p>I figured I'd start with something classic. <!--more--></p>
-<iframe src="http://bdero.me/ivank-tests/hanoi/" width="100%" height="465" frameborder="no"></iframe>
+<iframe src="http://cheesekeg.com/listings/projects/ivank-tests/hanoi/" width="100%" height="465" frameborder="no"></iframe>
 
 <h5><strong>If you don't see anything in the frame above, then either <a title="Check if your browser supports WebGL" href="http://get.webgl.org/" target="_blank">your browser doesn't support WebGL</a>, or your graphics driver is not sufficient for initializing a WebGL context.</strong></h5>
 
-<p>The source code is available on <a title="Tower of Hanoi Solver source code" href="https://github.com/bdero/ivank-tests/blob/gh-pages/hanoi/hanoi.js" target="_blank">GitHub</a>.</p>
+<p>The source code is available on <a title="Tower of Hanoi Solver source code" href="http://git.cheesekeg.com/?p=ivank-tests.git;a=history;f=hanoi;hb=HEAD" target="_blank">git.cheesekeg.com</a>.</p>
 <p>It works by generating the optimal solution using the common <a title="Tower of Hanoi recursive solution" href="https://en.wikipedia.org/wiki/Tower_of_Hanoi#Recursive_solution" target="_blank">recursive algorithm</a>. It then walks through each step in the solution sequence, shifting disks from peg to peg in order to give a human-friendly visual. It can generate the solution and display it for any number of starting disks. The number of disks to use is passed as an argument to the <strong>Hanoi()</strong> constructor.</p>
-<p>The generated solution for three disks looks like this:</p>
-<div class="highlight"><pre><span></span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]</span>
-</pre></div>
-
-
+<p>The generated solution for three disks looks like this:
+[prettify class="javascript"][[0, 2], [0, 1], [2, 1], [0, 2], [1, 0], [1, 2], [0, 2]][/prettify]</p>
 <p>It's organized into steps, where each array element consists of a source peg and destination peg. So the first step says to move the top-most disk of <strong>peg 0</strong> to <strong>peg 2</strong>, and the second step says to move the top disk of <strong>peg 0</strong> to <strong>peg 1</strong>, etc.. If all of the steps in the sequence were completed, then the disks would be left correctly stacked on top of <strong>peg 2</strong>.</p>
 <p>If you run your browser's JavaScript console (<strong>Ctrl+Shift+K</strong> in Firefox, <strong>Ctrl+Shift+J</strong> in Chromium) and then refresh this page, you can inspect the generated solution array, which is logged after the algorithm completes and before the disks start visually shifting from peg to peg.</p>
 <p>The graphics are provided by WebGL via <a href="http://lib.ivank.net/" target="_blank">IvanK.js</a> and <a href="http://tweener.ivank.net/" target="_blank">Tweener</a>. IvanK.js is really nice because it abstracts a lot of entity management out of the way, providing lots of conveniences that the Flash API makes available without any of the proprietary garbage attached. Very fun and suitable for fast WebGL games and interactive prototypes!</p>                </article>
