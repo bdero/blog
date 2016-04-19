@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>bran's blog - oldie</title>
+        <link rel="stylesheet" href="http://bdero.me/blog/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://bdero.me/blog/">bran's blog </a></h1>
+                <nav><ul>
+                    <li><a href="http://bdero.me/blog/category/algorithms.html">Algorithms</a></li>
+                    <li><a href="http://bdero.me/blog/category/experiments.html">Experiments</a></li>
+                    <li><a href="http://bdero.me/blog/category/games.html">Games</a></li>
+                    <li><a href="http://bdero.me/blog/category/scripts.html">Scripts</a></li>
+                    <li><a href="http://bdero.me/blog/category/simulations.html">Simulations</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="http://bdero.me/blog/eight-experiments.html">Eight experiments</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2013-11-25T22:04:00-05:00">
+                Published: Mon 25 November 2013
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://bdero.me/blog/author/brandon-derosier.html">Brandon DeRosier</a>
+        </address>
+<p>In <a href="http://bdero.me/blog/category/experiments.html">Experiments</a>.</p>
+<p>tags: <a href="http://bdero.me/blog/tag/25d.html">2.5d</a> <a href="http://bdero.me/blog/tag/2d.html">2d</a> <a href="http://bdero.me/blog/tag/3d.html">3d</a> <a href="http://bdero.me/blog/tag/bitmap-graphics.html">bitmap graphics</a> <a href="http://bdero.me/blog/tag/browser.html">browser</a> <a href="http://bdero.me/blog/tag/canvas.html">canvas</a> <a href="http://bdero.me/blog/tag/circles.html">circles</a> <a href="http://bdero.me/blog/tag/html5.html">html5</a> <a href="http://bdero.me/blog/tag/interactive.html">interactive</a> <a href="http://bdero.me/blog/tag/iteration.html">iteration</a> <a href="http://bdero.me/blog/tag/ivankjs.html">ivank.js</a> <a href="http://bdero.me/blog/tag/javascript.html">javascript</a> <a href="http://bdero.me/blog/tag/jsgamesoup.html">jsgamesoup</a> <a href="http://bdero.me/blog/tag/minimal.html">minimal</a> <a href="http://bdero.me/blog/tag/mobile.html">mobile</a> <a href="http://bdero.me/blog/tag/oldie.html">oldie</a> <a href="http://bdero.me/blog/tag/particles.html">particles</a> <a href="http://bdero.me/blog/tag/space.html">space</a> <a href="http://bdero.me/blog/tag/threejs.html">three.js</a> <a href="http://bdero.me/blog/tag/vector-graphics.html">vector graphics</a> <a href="http://bdero.me/blog/tag/webgl.html">webgl</a> </p>
+</footer><!-- /.post-info --><p>All throughout the development of my weekly experiments so far, there's been a lot of experimentation and learning on my part. Most of the "completed" examples are too fragmented or tiny for their own post, and some of them (especially the <a href="https://github.com/mrdoob/three.js" title="three.js Github repository" target="_blank">Three.js</a> ones) are based off of popular tutorials posted on other blogs. The source code for each of them has been kicking around in the "test" <a href="https://github.com/bdero?tab=repositories" title="cheesekeg.com Gitweb" target="_blank">repositories</a> from the beginning, though.</p>
+<p>Since I didn't manage to finish what I wanted to post this week, I've grouped all of these little experiments into one post (in no particular order) to make up for it.
+<!--more--></p>
+<p>None of the content is embedded for two reasons. Firstly, they all behave differently and I may or may not have figured out the greatest ways to make the experiments adjust to resizing. Secondly, I didn't want to crash your phone's browser with eight canvases and six WebGL contexts at the same time.</p>
+<p>Instead, the screenshots below directly link to each corresponding experiment. Some are interactive, some aren't. Some use <a href="http://lib.ivank.net/" title="IvanK Lib" target="_blank">IvanK.js</a>, others use <a href="https://github.com/mrdoob/three.js" title="three.js Github repository" target="_blank">Three.js</a> or <a href="https://github.com/chr15m/jsGameSoup" title="jsGameSoup GitHub repository" target="_blank">jsGameSoup</a>. Also, "pointer trail" is not recent, but I thought I'd throw it in anyhow.</p>
+<p>Try clicking and moving the mouse around on all of them to see what they do! c:
+<h3 style="text-align: center;">Click the images below to play the experiments.</h3>
+<a title="Pointer trail experiment" href="http://bdero.me/html5fun/projects/pointertrail2/" target="_blank"><img alt="Pointer trail experiment" src="http://bdero.me/blog/images/experiments/pointertrail.png" width="100%" /></a>
+<a title="Vertex shader experiment" href="http://bdero.me/threejs-tests/helloshader/" target="_blank"><img alt="Vertex shader experiment" src="http://bdero.me/blog/images/experiments/vertexshader.png" width="100%" /></a>
+<a title="Spheres experiment" href="http://bdero.me/threejs-tests/simplewebgl/" target="_blank"><img alt="Spheres experiment" src="http://bdero.me/blog/images/experiments/spheres.png" width="100%" /></a>
+<a title="Stars experiment" href="http://bdero.me/threejs-tests/stars/" target="_blank"><img alt="Stars experiment" src="http://bdero.me/blog/images/experiments/stars.png" width="100%" /></a>
+<a title="Squares experiment" href="http://bdero.me/ivank-tests/squares/" target="_blank"><img alt="Squares experiment" src="http://bdero.me/blog/images/experiments/squares.png" width="100%" /></a>
+<a title="Noise experiment" href="http://bdero.me/ivank-tests/noise/" target="_blank"><img alt="Noise experiment" src="http://bdero.me/blog/images/experiments/noise.png" width="100%" /></a>
+<a title="Hearts experiment" href="http://bdero.me/ivank-tests/hearts/" target="_blank"><img alt="Hearts experiment" src="http://bdero.me/blog/images/experiments/hearts.png" width="100%" /></a>
+<a title="Fire experiment" href="http://bdero.me/ivank-tests/fire/" target="_blank"><img alt="Fire experiment" src="http://bdero.me/blog/images/experiments/fire.png" width="100%" /></a></p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://bdero.me/blog/airport-simulator.html" rel="bookmark"
+                           title="Permalink to Airport "simulator"">Airport "simulator"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-10-27T19:37:00-04:00">
+                Published: Sun 27 October 2013
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://bdero.me/blog/author/brandon-derosier.html">Brandon DeRosier</a>
+        </address>
+<p>In <a href="http://bdero.me/blog/category/simulations.html">Simulations</a>.</p>
+<p>tags: <a href="http://bdero.me/blog/tag/2d.html">2d</a> <a href="http://bdero.me/blog/tag/bitmap-graphics.html">bitmap graphics</a> <a href="http://bdero.me/blog/tag/browser.html">browser</a> <a href="http://bdero.me/blog/tag/canvas.html">canvas</a> <a href="http://bdero.me/blog/tag/html5.html">html5</a> <a href="http://bdero.me/blog/tag/ivankjs.html">ivank.js</a> <a href="http://bdero.me/blog/tag/minimal.html">minimal</a> <a href="http://bdero.me/blog/tag/mobile.html">mobile</a> <a href="http://bdero.me/blog/tag/oldie.html">oldie</a> <a href="http://bdero.me/blog/tag/simulation.html">simulation</a> <a href="http://bdero.me/blog/tag/visualization.html">visualization</a> </p>
+</footer><!-- /.post-info -->                <p>During my sophomore year at college, I was on the lookout to insert graphics into whatever I could to loosen up some monotony. I decided that I would hack on displays to the labs I was doing for one of my classes by using Slick2D (it was basically a Java collections course). I presented in front of the class to show how easy it is to throw a little visual in front of something like this - I even found the I recorded for students explaining how grab the source!</p>
+                <a class="readmore" href="http://bdero.me/blog/airport-simulator.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://bdero.me/blog/particle-benchmark.html" rel="bookmark"
+                           title="Permalink to Mini game: Particle Benchmark">Mini game: Particle Benchmark</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-10-24T00:50:00-04:00">
+                Published: Thu 24 October 2013
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://bdero.me/blog/author/brandon-derosier.html">Brandon DeRosier</a>
+        </address>
+<p>In <a href="http://bdero.me/blog/category/games.html">Games</a>.</p>
+<p>tags: <a href="http://bdero.me/blog/tag/25d.html">2.5d</a> <a href="http://bdero.me/blog/tag/browser.html">browser</a> <a href="http://bdero.me/blog/tag/canvas.html">canvas</a> <a href="http://bdero.me/blog/tag/circles.html">circles</a> <a href="http://bdero.me/blog/tag/html5.html">html5</a> <a href="http://bdero.me/blog/tag/interactive.html">interactive</a> <a href="http://bdero.me/blog/tag/javascript.html">javascript</a> <a href="http://bdero.me/blog/tag/mini-game.html">mini game</a> <a href="http://bdero.me/blog/tag/monkey.html">monkey</a> <a href="http://bdero.me/blog/tag/oldie.html">oldie</a> <a href="http://bdero.me/blog/tag/particles.html">particles</a> <a href="http://bdero.me/blog/tag/vector-graphics.html">vector graphics</a> </p>
+</footer><!-- /.post-info -->                <p>This is another oldie - and it's sort of a mini game because, even though there's no real way to win (I just played it by ear without any real planning or direction), it's still interactive in a very game-like way.</p>
+                <a class="readmore" href="http://bdero.me/blog/particle-benchmark.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://bdero.me/blog/equilibrium.html" rel="bookmark"
+                           title="Permalink to Mini game: Equilibrium">Mini game: Equilibrium</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-10-20T23:27:00-04:00">
+                Published: Sun 20 October 2013
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://bdero.me/blog/author/brandon-derosier.html">Brandon DeRosier</a>
+        </address>
+<p>In <a href="http://bdero.me/blog/category/games.html">Games</a>.</p>
+<p>tags: <a href="http://bdero.me/blog/tag/2d.html">2d</a> <a href="http://bdero.me/blog/tag/browser.html">browser</a> <a href="http://bdero.me/blog/tag/canvas.html">canvas</a> <a href="http://bdero.me/blog/tag/circles.html">circles</a> <a href="http://bdero.me/blog/tag/html5.html">html5</a> <a href="http://bdero.me/blog/tag/interactive.html">interactive</a> <a href="http://bdero.me/blog/tag/javascript.html">javascript</a> <a href="http://bdero.me/blog/tag/jsgamesoup.html">jsgamesoup</a> <a href="http://bdero.me/blog/tag/mini-game.html">mini game</a> <a href="http://bdero.me/blog/tag/minimal.html">minimal</a> <a href="http://bdero.me/blog/tag/oldie.html">oldie</a> <a href="http://bdero.me/blog/tag/vector-graphics.html">vector graphics</a> </p>
+</footer><!-- /.post-info -->                <p>Well, that streak quickly came to an end. I was hoping to write new experiments on time to post every week, but time has gotten very tight very fast. Instead, I have something old to share. I banged most of it out during a physics class one day last year right around the time I started feeling sour about my college.</p>
+                <a class="readmore" href="http://bdero.me/blog/equilibrium.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

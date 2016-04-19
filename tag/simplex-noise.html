@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>bran's blog - simplex noise</title>
+        <link rel="stylesheet" href="http://bdero.me/blog/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://bdero.me/blog/">bran's blog </a></h1>
+                <nav><ul>
+                    <li><a href="http://bdero.me/blog/category/algorithms.html">Algorithms</a></li>
+                    <li><a href="http://bdero.me/blog/category/experiments.html">Experiments</a></li>
+                    <li><a href="http://bdero.me/blog/category/games.html">Games</a></li>
+                    <li><a href="http://bdero.me/blog/category/scripts.html">Scripts</a></li>
+                    <li><a href="http://bdero.me/blog/category/simulations.html">Simulations</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="http://bdero.me/blog/infinite-simplex-noise-map-3d.html">(Not-so) infinite simplex noise map in 3D</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2013-10-14T23:20:00-04:00">
+                Published: Mon 14 October 2013
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://bdero.me/blog/author/brandon-derosier.html">Brandon DeRosier</a>
+        </address>
+<p>In <a href="http://bdero.me/blog/category/algorithms.html">Algorithms</a>.</p>
+<p>tags: <a href="http://bdero.me/blog/tag/3d.html">3d</a> <a href="http://bdero.me/blog/tag/algorithm.html">algorithm</a> <a href="http://bdero.me/blog/tag/browser.html">browser</a> <a href="http://bdero.me/blog/tag/canvas.html">canvas</a> <a href="http://bdero.me/blog/tag/html5.html">html5</a> <a href="http://bdero.me/blog/tag/interactive.html">interactive</a> <a href="http://bdero.me/blog/tag/javascript.html">javascript</a> <a href="http://bdero.me/blog/tag/minimal.html">minimal</a> <a href="http://bdero.me/blog/tag/perlin-noise.html">perlin noise</a> <a href="http://bdero.me/blog/tag/pointer-lock-controls.html">pointer lock controls</a> <a href="http://bdero.me/blog/tag/quake-controls.html">quake controls</a> <a href="http://bdero.me/blog/tag/simplex-noise.html">simplex noise</a> <a href="http://bdero.me/blog/tag/terrain.html">terrain</a> <a href="http://bdero.me/blog/tag/threejs.html">three.js</a> <a href="http://bdero.me/blog/tag/visualization.html">visualization</a> <a href="http://bdero.me/blog/tag/webgl.html">webgl</a> </p>
+</footer><!-- /.post-info --><p>I thought this might be a good start for something 3D. It's not-so infinite because the terrain doesn't keep regenerating in front of the camera as you move around (which wouldn't even really take that much refactoring), but the camera's height should keep changing according to the noise even after moving far away from the terrain.
+<!--more--></p>
+<iframe src="http://bdero.me/threejs-tests/simplexmap/" height="465" width="100%" frameborder="no"></iframe>
+
+<h5><strong>If you don't see anything in the frame above, then either <a title="Check if your browser supports WebGL" href="http://get.webgl.org/" target="_blank">your browser doesn't support WebGL</a>, or your graphics driver is not sufficient for initializing a WebGL context.</strong></h5>
+
+<p>The source code is available on <a title="Simplex terrain map source code" href="https://github.com/bdero/threejs-tests/blob/gh-pages/simplexmap/simplexmap.js" target="_blank">GitHub</a>.</p>
+<p>To use it, just click on it to receive a pointer lock request through your browser. If you're using a flavor of Firefox, the request will display in the form of a balloon popup. When the request is accepted, you'll be able to pan the camera around Quake style. You can also move about the scene using the classic W, S, A, and D keys.</p>
+<p>As the title implies, the shape of the terrain and the Y-position of the camera is determined by a similar simplex noise function (provided by <a title="simplex-noise.js Github repository" href="https://github.com/jwagner/simplex-noise.js" target="_blank">simplex-noise.js</a>) to that of which I used in my <a title="Some simplex noise" href="http://bdero.me/blog/some-simplex-noise.html">previous post</a>. The only real difference is the fact that I used 2D simplex noise here instead of 3D since I had no interest in making the terrain morph.
+That type of thing would totally be useful for morphing a water surface. Though, in that case, one might just consider using a <a title="webgl-noise Github repository" href="https://github.com/ashima/webgl-noise" target="_blank">vertex shader implementation of simplex noise</a>.</p>
+<p>Graphics provided by WebGL via the wonderful <a title="three.js Github repository" href="https://github.com/mrdoob/three.js" target="_blank">three.js</a>.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://bdero.me/blog/some-simplex-noise.html" rel="bookmark"
+                           title="Permalink to Some simplex noise">Some simplex noise</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-10-06T05:53:00-04:00">
+                Published: Sun 06 October 2013
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://bdero.me/blog/author/brandon-derosier.html">Brandon DeRosier</a>
+        </address>
+<p>In <a href="http://bdero.me/blog/category/algorithms.html">Algorithms</a>.</p>
+<p>tags: <a href="http://bdero.me/blog/tag/2d.html">2d</a> <a href="http://bdero.me/blog/tag/algorithm.html">algorithm</a> <a href="http://bdero.me/blog/tag/browser.html">browser</a> <a href="http://bdero.me/blog/tag/canvas.html">canvas</a> <a href="http://bdero.me/blog/tag/html5.html">html5</a> <a href="http://bdero.me/blog/tag/iteration.html">iteration</a> <a href="http://bdero.me/blog/tag/ivankjs.html">ivank.js</a> <a href="http://bdero.me/blog/tag/javascript.html">javascript</a> <a href="http://bdero.me/blog/tag/minimal.html">minimal</a> <a href="http://bdero.me/blog/tag/perlin-noise.html">perlin noise</a> <a href="http://bdero.me/blog/tag/plasma.html">plasma</a> <a href="http://bdero.me/blog/tag/simplex-noise.html">simplex noise</a> <a href="http://bdero.me/blog/tag/visualization.html">visualization</a> <a href="http://bdero.me/blog/tag/webgl.html">webgl</a> </p>
+</footer><!-- /.post-info -->                <p>Just a tiny simplex noise test with retro colors. c:</p>
+                <a class="readmore" href="http://bdero.me/blog/some-simplex-noise.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Mini game: Equilibrium</title>
+        <link rel="stylesheet" href="http://bdero.me/blog/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://bdero.me/blog/">bran's blog </a></h1>
+                <nav><ul>
+                    <li><a href="http://bdero.me/blog/category/algorithms.html">Algorithms</a></li>
+                    <li><a href="http://bdero.me/blog/category/experiments.html">Experiments</a></li>
+                    <li class="active"><a href="http://bdero.me/blog/category/games.html">Games</a></li>
+                    <li><a href="http://bdero.me/blog/category/scripts.html">Scripts</a></li>
+                    <li><a href="http://bdero.me/blog/category/simulations.html">Simulations</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://bdero.me/blog/equilibrium.html" rel="bookmark"
+           title="Permalink to Mini game: Equilibrium">Mini game: Equilibrium</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-10-20T23:27:00-04:00">
+                Published: Sun 20 October 2013
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://bdero.me/blog/author/brandon-derosier.html">Brandon DeRosier</a>
+        </address>
+<p>In <a href="http://bdero.me/blog/category/games.html">Games</a>.</p>
+<p>tags: <a href="http://bdero.me/blog/tag/2d.html">2d</a> <a href="http://bdero.me/blog/tag/browser.html">browser</a> <a href="http://bdero.me/blog/tag/canvas.html">canvas</a> <a href="http://bdero.me/blog/tag/circles.html">circles</a> <a href="http://bdero.me/blog/tag/html5.html">html5</a> <a href="http://bdero.me/blog/tag/interactive.html">interactive</a> <a href="http://bdero.me/blog/tag/javascript.html">javascript</a> <a href="http://bdero.me/blog/tag/jsgamesoup.html">jsgamesoup</a> <a href="http://bdero.me/blog/tag/mini-game.html">mini game</a> <a href="http://bdero.me/blog/tag/minimal.html">minimal</a> <a href="http://bdero.me/blog/tag/oldie.html">oldie</a> <a href="http://bdero.me/blog/tag/vector-graphics.html">vector graphics</a> </p>
+</footer><!-- /.post-info -->      <p>Well, that streak quickly came to an end. I was hoping to write new experiments on time to post every week, but time has gotten very tight very fast. Instead, I have something old to share. I banged most of it out during a physics class one day last year right around the time I started feeling sour about my college. <!--more--></p>
+<iframe src="http://bdero.me/html5fun/projects/equilibrium/" height="465" width="100%" frameborder="no"></iframe>
+
+<p>The source code is available on <a title="Equilibrium source code" href="https://github.com/bdero/html5fun/blob/gh-pages/projects/equilibrium/equilibrium.js" target="_blank">GitHub</a>.</p>
+<p>Once the green or red point is absorbed, left clicking restarts the mini game.</p>
+<p>You are a mouse controlled green point who is able to absorb both the red center point and the spiraling white points. The red point simply remains in the center, collecting the white points that you don't collect yourself. Absorption of a white point results in growth. When you (the green point) touch the red point, both points shrink.</p>
+<p>There are two ways to lose, but no real way to win. In order to stay playing for as long as possible and progress, you must prevent the red and green points from absorbing each other. There's a sort of score/level bar at the top that collects as the sizes of the points are canceled out. Each time the "score" bar fills up, it resets and becomes more difficult to refill.</p>
+<p>I figure this might be a fun little idea to expand later.</p>
+<p>Graphics provided by the canvas 2D API via <a title="jsGameSoup GitHub repository" href="https://github.com/chr15m/jsGameSoup" target="_blank">jsGameSoup</a>.</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
