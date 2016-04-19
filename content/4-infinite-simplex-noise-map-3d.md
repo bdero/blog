@@ -1,4 +1,4 @@
-Title: Some simplex noise
+Title: (Not-so) infinite simplex noise map in 3D
 Date: 2013-10-14 23:20
 Category: Algorithms
 Tags: 3d, algorithm, browser, canvas, html5, interactive, javascript, minimal, perlin noise, pointer lock controls, quake controls, simplex noise, terrain, three.js, visualization, webgl
