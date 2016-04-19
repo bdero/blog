@@ -3,7 +3,7 @@
 <head>
         <meta charset="utf-8" />
         <title>Julia set viewer</title>
-        <link rel="stylesheet" href="http://bdero.me/blog/theme/css/main.css" />
+        <link rel="stylesheet" href="http://blog.bdero.me/theme/css/main.css" />
 
         <!--[if IE]>
             <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -12,20 +12,20 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://bdero.me/blog/">bran's blog </a></h1>
+                <h1><a href="http://blog.bdero.me/">bran's blog </a></h1>
                 <nav><ul>
-                    <li class="active"><a href="http://bdero.me/blog/category/algorithms.html">Algorithms</a></li>
-                    <li><a href="http://bdero.me/blog/category/experiments.html">Experiments</a></li>
-                    <li><a href="http://bdero.me/blog/category/games.html">Games</a></li>
-                    <li><a href="http://bdero.me/blog/category/scripts.html">Scripts</a></li>
-                    <li><a href="http://bdero.me/blog/category/simulations.html">Simulations</a></li>
+                    <li class="active"><a href="http://blog.bdero.me/category/algorithms.html">Algorithms</a></li>
+                    <li><a href="http://blog.bdero.me/category/experiments.html">Experiments</a></li>
+                    <li><a href="http://blog.bdero.me/category/games.html">Games</a></li>
+                    <li><a href="http://blog.bdero.me/category/scripts.html">Scripts</a></li>
+                    <li><a href="http://blog.bdero.me/category/simulations.html">Simulations</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 <section id="content" class="body">
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="http://bdero.me/blog/julia-set-viewer.html" rel="bookmark"
+        <a href="http://blog.bdero.me/julia-set-viewer.html" rel="bookmark"
            title="Permalink to Julia set viewer">Julia set viewer</a></h1>
     </header>
 
@@ -36,10 +36,10 @@
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="http://bdero.me/blog/author/brandon-derosier.html">Brandon DeRosier</a>
+                By                         <a class="url fn" href="http://blog.bdero.me/author/brandon-derosier.html">Brandon DeRosier</a>
         </address>
-<p>In <a href="http://bdero.me/blog/category/algorithms.html">Algorithms</a>.</p>
-<p>tags: <a href="http://bdero.me/blog/tag/2d.html">2d</a> <a href="http://bdero.me/blog/tag/algorithm.html">algorithm</a> <a href="http://bdero.me/blog/tag/browser.html">browser</a> <a href="http://bdero.me/blog/tag/canvas.html">canvas</a> <a href="http://bdero.me/blog/tag/classic.html">classic</a> <a href="http://bdero.me/blog/tag/fractal.html">fractal</a> <a href="http://bdero.me/blog/tag/html5.html">html5</a> <a href="http://bdero.me/blog/tag/interactive.html">interactive</a> <a href="http://bdero.me/blog/tag/iteration.html">iteration</a> <a href="http://bdero.me/blog/tag/ivankjs.html">ivank.js</a> <a href="http://bdero.me/blog/tag/javascript.html">javascript</a> <a href="http://bdero.me/blog/tag/julia-set.html">julia set</a> <a href="http://bdero.me/blog/tag/mobile.html">mobile</a> <a href="http://bdero.me/blog/tag/vector-graphics.html">vector graphics</a> <a href="http://bdero.me/blog/tag/visualization.html">visualization</a> <a href="http://bdero.me/blog/tag/webgl.html">webgl</a> </p>
+<p>In <a href="http://blog.bdero.me/category/algorithms.html">Algorithms</a>.</p>
+<p>tags: <a href="http://blog.bdero.me/tag/2d.html">2d</a> <a href="http://blog.bdero.me/tag/algorithm.html">algorithm</a> <a href="http://blog.bdero.me/tag/browser.html">browser</a> <a href="http://blog.bdero.me/tag/canvas.html">canvas</a> <a href="http://blog.bdero.me/tag/classic.html">classic</a> <a href="http://blog.bdero.me/tag/fractal.html">fractal</a> <a href="http://blog.bdero.me/tag/html5.html">html5</a> <a href="http://blog.bdero.me/tag/interactive.html">interactive</a> <a href="http://blog.bdero.me/tag/iteration.html">iteration</a> <a href="http://blog.bdero.me/tag/ivankjs.html">ivank.js</a> <a href="http://blog.bdero.me/tag/javascript.html">javascript</a> <a href="http://blog.bdero.me/tag/julia-set.html">julia set</a> <a href="http://blog.bdero.me/tag/mobile.html">mobile</a> <a href="http://blog.bdero.me/tag/vector-graphics.html">vector graphics</a> <a href="http://blog.bdero.me/tag/visualization.html">visualization</a> <a href="http://blog.bdero.me/tag/webgl.html">webgl</a> </p>
 </footer><!-- /.post-info -->      <p>A little bit of fun with fractals! <!--more--></p>
 <iframe src="http://bdero.me/ivank-tests/julia/" width="100%" height="465" frameborder="no"></iframe>
 
@@ -87,7 +87,7 @@ g("center:0.5,0.5");
 </ul></p>
 <p>Everytime you hit <strong>+</strong> to zoom in, the <em>zoom</em> of the <strong>viewport</strong> is multiplied by <em>1.5</em>. The <strong>viewport</strong> generates a rectangle every frame by essentially dividing a given starting rectangle's width and height by the <em>zoom</em>.</p>
 <p>Because of this setup, if you zoom in far enough, you'll crash into a pixelated mess:
-<img class="aligncenter" alt="julia_zoom" src="http://bdero.me/blog/images/julia_zoom.gif" /></p>
+<img class="aligncenter" alt="julia_zoom" src="http://blog.bdero.me/images/julia_zoom.gif" /></p>
 <p>This is due to the floating point numbers having limited precision - in the case of JavaScript, floating point numbers are 64-bit. You may also notice that the <strong>viewport</strong>'s <em>center</em> snaps while panning when you're zoomed in that far.</p>
 <p>The graphics are provided by WebGL via the wonderful <a href="http://lib.ivank.net/" title="IvanK Lib" target="_blank">IvanK.js</a>. The Julia set itself is, however, ironically software rendered - mainly because IvanK.js isn't intended for use alongside low level access to WebGL.. and I wanted to see how fast I could get it to work in pure JavaScript. c:</p>
 <p>No fragment shaders were <del>butchered</del> written in the making of this demo.</p>
