@@ -21,7 +21,7 @@ Here's the code:
  * He Comes - Animated text fuck-up script.
  * 2013 Brandon DeRosier
  *
- * http://bdero.me/animated-zalgo/hecomes.js
+ * https://github.com/bdero/animated-zalgo
  *
  * This javascript is licensed under the GNU General Public License, version 3 or later.
  * http://www.gnu.org/licenses/gpl-3.0-standalone.html
