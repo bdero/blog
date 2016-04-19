@@ -1,6 +1,6 @@
 Title: Mini game: Equilibrium
 Date: 2013-10-20 23:27
-Category: Algorithms
+Category: Games
 Tags: 2d, browser, canvas, circles, html5, interactive, javascript, jsgamesoup, mini game, minimal, oldie, vector graphics
 Slug: equilibrium
 Authors: Brandon DeRosier
