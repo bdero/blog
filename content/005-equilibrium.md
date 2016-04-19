@@ -19,4 +19,4 @@ There are two ways to lose, but no real way to win. In order to stay playing for
 
 I figure this might be a fun little idea to expand later.
 
-Graphics provided by the canvas 2D API via <a title="jsGameSoup" href="http://www.jsgamesoup.net/" target="_blank">jsGameSoup</a>.
+Graphics provided by the canvas 2D API via <a title="jsGameSoup GitHub repository" href="https://github.com/chr15m/jsGameSoup" target="_blank">jsGameSoup</a>.

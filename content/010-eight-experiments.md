@@ -13,7 +13,7 @@ Since I didn't manage to finish what I wanted to post this week, I've grouped al
 
 None of the content is embedded for two reasons. Firstly, they all behave differently and I may or may not have figured out the greatest ways to make the experiments adjust to resizing. Secondly, I didn't want to crash your phone's browser with eight canvases and six WebGL contexts at the same time.
 
-Instead, the screenshots below directly link to each corresponding experiment. Some are interactive, some aren't. Some use <a href="http://lib.ivank.net/" title="IvanK Lib" target="_blank">IvanK.js</a>, others use <a href="https://github.com/mrdoob/three.js" title="three.js Github repository" target="_blank">Three.js</a> or <a href="http://www.jsgamesoup.net/" title="jsGameSoup website" target="_blank">jsGameSoup</a>. Also, "pointer trail" is not recent, but I thought I'd throw it in anyhow.
+Instead, the screenshots below directly link to each corresponding experiment. Some are interactive, some aren't. Some use <a href="http://lib.ivank.net/" title="IvanK Lib" target="_blank">IvanK.js</a>, others use <a href="https://github.com/mrdoob/three.js" title="three.js Github repository" target="_blank">Three.js</a> or <a href="https://github.com/chr15m/jsGameSoup" title="jsGameSoup GitHub repository" target="_blank">jsGameSoup</a>. Also, "pointer trail" is not recent, but I thought I'd throw it in anyhow.
 
 Try clicking and moving the mouse around on all of them to see what they do! c:
 <h3 style="text-align: center;">Click the images below to play the experiments.</h3>
