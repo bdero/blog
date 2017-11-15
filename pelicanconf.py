@@ -38,8 +38,12 @@ AUTHORS_BIO = {
         "name": "Brandon DeRosier",
         "cover": "images/banner1500x500.jpeg",
         "image": "images/avatar.jpg",
-        "website": "https://blog.bdero.me",
+        #"website": "https://blog.bdero.me",  # This one is redundant
         "location": "Boston, MA",
-        "bio": "This is the place for a small biography with max 200 characters. Well, now 100 are left. Cool, hugh?"
+        "github": "bdero",
+        "twitter": "cheesekeg",
+        "linkedin": "bderosier",
+        "keybase": "bdero",
+        "bio": "I'm a Full Stack Engineer with a lot of interests. Please see my GitHub profile if you're interested in my work. :)",
     }
 }
