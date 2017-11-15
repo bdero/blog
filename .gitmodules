@@ -1,0 +1,12 @@
+[submodule "output"]
+	path = output
+	url = git@github.com:bdero/blog.git
+	branch = gh-pages
+[submodule "theme"]
+	path = themes/attila
+	url = git@github.com:bdero/attila.git
+	branch = bdero/blog
+[submodule "plugins"]
+	path = plugins
+	url = git@github.com:getpelican/pelican-plugins.git
+	branch = master
