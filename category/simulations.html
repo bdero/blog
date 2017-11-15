@@ -1,79 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="utf-8" />
-        <title>bran's blog - Simulations</title>
-        <link rel="stylesheet" href="http://blog.bdero.me/theme/css/main.css" />
+      <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
+  <title>bran's blog - Articles in the Simulations category</title>
+
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="origin" />
+  <meta name="generator" content="Pelican" />
+  <link href="../" rel="canonical" />
+
+  <!-- Feed -->
+        <link href="https://blog.bdero.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="bran's blog Full Atom Feed" />
+          <link href="https://blog.bdero.me/feeds/simulations.atom.xml" type="application/atom+xml" rel="alternate" title="bran's blog Categories Atom Feed" />
+
+  <link href="../theme/css/style.css" type="text/css" rel="stylesheet" />
+
+  <!-- Code highlight color scheme -->
+      <link href="../theme/css/code_blocks/github.css" rel="stylesheet">
+
+
+  <!-- Custom fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  <script src="https://use.fontawesome.com/ec379960cb.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="bran's blog"/>
+<meta property="og:type" content="blog"/>
+<meta property="og:title" content="bran's blog"/>
+<meta property="og:description" content="View the blog."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="../"/>
+<meta property="og:image" content="../images/banner1500x500.jpeg">
+
+<!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@cheesekeg">
+  <meta name="twitter:title" content="bran's blog">
+  <meta name="twitter:description" content="View the blog.">
+  <meta name="twitter:url" content="../">
+  <meta name="twitter:image:src" content="../images/banner1500x500.jpeg">
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Website",
+  "name": " bran's blog ",
+  "url" : "../",
+  "image": "../images/banner1500x500.jpeg",
+  "description": "View the blog."
+}
+</script>
 </head>
+<!-- TODO : Body class -->
+<body class="home-template">
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://blog.bdero.me/">bran's blog </a></h1>
-                <nav><ul>
-                    <li><a href="http://blog.bdero.me/category/algorithms.html">Algorithms</a></li>
-                    <li><a href="http://blog.bdero.me/category/experiments.html">Experiments</a></li>
-                    <li><a href="http://blog.bdero.me/category/games.html">Games</a></li>
-                    <li><a href="http://blog.bdero.me/category/scripts.html">Scripts</a></li>
-                    <li class="active"><a href="http://blog.bdero.me/category/simulations.html">Simulations</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+<nav id="menu">
+  <a class="close-button">Close</a>
+  <div class="nav-wrapper">
+    <p class="nav-label">Menu</p>
+    <ul>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://blog.bdero.me/airport-simulator.html">Airport "simulator"</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2013-10-27T19:37:00-04:00">
-                Published: Sun 27 October 2013
-        </abbr>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://blog.bdero.me/author/brandon-derosier.html">Brandon DeRosier</a>
-        </address>
-<p>In <a href="http://blog.bdero.me/category/simulations.html">Simulations</a>.</p>
-<p>tags: <a href="http://blog.bdero.me/tag/2d.html">2d</a> <a href="http://blog.bdero.me/tag/bitmap-graphics.html">bitmap graphics</a> <a href="http://blog.bdero.me/tag/browser.html">browser</a> <a href="http://blog.bdero.me/tag/canvas.html">canvas</a> <a href="http://blog.bdero.me/tag/html5.html">html5</a> <a href="http://blog.bdero.me/tag/ivankjs.html">ivank.js</a> <a href="http://blog.bdero.me/tag/minimal.html">minimal</a> <a href="http://blog.bdero.me/tag/mobile.html">mobile</a> <a href="http://blog.bdero.me/tag/oldie.html">oldie</a> <a href="http://blog.bdero.me/tag/simulation.html">simulation</a> <a href="http://blog.bdero.me/tag/visualization.html">visualization</a> </p>
-</footer><!-- /.post-info --><p>During my sophomore year at college, I was on the lookout to insert graphics into whatever I could to loosen up some monotony. I decided that I would hack on displays to the labs I was doing for one of my classes by using Slick2D (it was basically a Java collections course). I presented in front of the class to show how easy it is to throw a little visual in front of something like this - I even found the I recorded for students explaining how grab the source!</p>
-<p>Unfortunately, I hopped on the procrastination train after only one lab, so the resulting repository with the one modified lab, "airport simulation", might still be sitting on <a href="https://github.com/bdero/slick2d-structures-labs" title='Original "airport simulation" repository' target="_blank">GitHub</a>, but it was never committed to again.</p>
-<p>I was reminded of this recently and quickly rewrote it yesterday for browser use.
-<!--more--></p>
-<iframe src="http://bdero.me/ivank-tests/airport/" height="371" width="100%" frameborder="no"></iframe>
+    </ul>
+  </div>
+</nav>
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header id="blog-header" class="has-cover">
+      <div class="inner">
+        <nav id="navigation">
+            <span id="home-button" class="nav-button">
+                <a class="home-button" href="../" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+            </span>
+          <span id="menu-button" class="nav-button">
+            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+          </span>
+        </nav>
+        <h1 class="post-title">Category Simulations</h1>
+        <span class="blog-description">Posts: 1</span>
+            <div class="blog-cover cover" style="background-image: url('images/banner1500x500.jpeg')">            
+      </div>
+    </header>
 
-<h5><strong>If you don't see anything in the frame above, then either <a title="Check if your browser supports WebGL" href="http://get.webgl.org/" target="_blank">your browser doesn't support WebGL</a>, or your graphics driver is not sufficient for initializing a WebGL context.</strong></h5>
+  <section id="wrapper">
+    <a class="hidden-close"></a>
 
-<p>The source code is available on <a title="Airport simulator test source code" href="https://github.com/bdero/ivank-tests/blob/gh-pages/airport/airport.js" target="_blank">GitHub</a>.</p>
-<p>Non-interactive, all it really does is display two queues of airplanes sharing a runway - ones that are waiting to land, and ones that are waiting to take off. There is only one runway, so they share it based on priority, where the queue of planes waiting to land takes precedence. Each action occupies the strip for one second, while there are five 15% chances per second for a new airplane to arrive at the scene.</p>
-<p>The graphics were made with <a href="http://inkscape.org/" title="Inkscape website" target="_blank">Inkscape</a>. The XCF file can be found in the <a href="https://github.com/bdero/slick2d-structures-labs/tree/master/src/lab4_AirportSimulation/images" title='Original "airport simulation" repository images' target="_blank">old repository</a>. And the graphics were rendered with WebGL via <a href="http://lib.ivank.net/" target="_blank">IvanK.js</a>.</p>                </article>
-            </aside><!-- /#featured -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+<div id="index" class="container">
+  <main class="content" role="main">
+    <div class="extra-pagination">
+<nav class="pagination" role="pagination">
+  <div class="inner">
+    <span class="pagination-info">Page 1 / 1</span>
+    <div class="clear"></div>
+  </div>
+</nav>
+    </div>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+        <article class="post">
+        <div class="inner">
+            <header class="post-header">         
+                <h2 class="post-title"><a href="../airport-simulator.html" rel="bookmark" title="Permalink to Airport "simulator"">Airport "simulator"</a>
+                </h2>
+                <span class="post-meta">
+                        <a href="../author/bdero.html">Bdero</a>
+                     | <time datetime="Sun 27 October 2013">Sun 27 October 2013</time>
+                </span>
+                <div class="clear"></div>
+            </header>
+                <section class="post-excerpt">
+                    <p>
+                        During my sophomore year at college, I was on the lookout to insert graphics into whatever I could to loosen up some monotony. I decided that I would hack on displays to the labs I was doing for one of my classes by using Slick2D (it was...
+                    </p>
+                </section>
+            </div>
+        </article>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+<nav class="pagination" role="pagination">
+  <div class="inner">
+    <span class="pagination-info">Page 1 / 1</span>
+    <div class="clear"></div>
+  </div>
+</nav>
+  </main>
+</div>
+      <!-- TODO : Body class -->
+    <div id="body-class" style="display: none;" class=""></div>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+    <footer id="footer">
+      <div class="inner">
+        <section class="credits">
+
+
+          <span class="credits-theme">Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a></span>
+          <span class="credits-software">Published with <a href="https://github.com/getpelican/pelican" rel="nofollow">Pelican</a></span>
+        </section>
+      </div>
+    </footer>
+  </section>
+
+  <script type="text/javascript" src="../theme/js/script.js"></script>
 
 </body>
 </html>

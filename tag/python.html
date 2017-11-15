@@ -1,148 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="utf-8" />
-        <title>bran's blog - python</title>
-        <link rel="stylesheet" href="http://blog.bdero.me/theme/css/main.css" />
+      <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
+  <title>bran's blog - Tag python</title>
+
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="origin" />
+  <meta name="generator" content="Pelican" />
+  <link href="../" rel="canonical" />
+
+  <!-- Feed -->
+        <link href="https://blog.bdero.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="bran's blog Full Atom Feed" />
+
+  <link href="../theme/css/style.css" type="text/css" rel="stylesheet" />
+
+  <!-- Code highlight color scheme -->
+      <link href="../theme/css/code_blocks/github.css" rel="stylesheet">
+
+
+  <!-- Custom fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  <script src="https://use.fontawesome.com/ec379960cb.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="bran's blog"/>
+<meta property="og:type" content="blog"/>
+<meta property="og:title" content="bran's blog"/>
+<meta property="og:description" content="View the blog."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="../"/>
+<meta property="og:image" content="../images/banner1500x500.jpeg">
+
+<!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@cheesekeg">
+  <meta name="twitter:title" content="bran's blog">
+  <meta name="twitter:description" content="View the blog.">
+  <meta name="twitter:url" content="../">
+  <meta name="twitter:image:src" content="../images/banner1500x500.jpeg">
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Website",
+  "name": " bran's blog ",
+  "url" : "../",
+  "image": "../images/banner1500x500.jpeg",
+  "description": "View the blog."
+}
+</script>
 </head>
+<!-- TODO : Body class -->
+<body class="home-template">
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://blog.bdero.me/">bran's blog </a></h1>
-                <nav><ul>
-                    <li><a href="http://blog.bdero.me/category/algorithms.html">Algorithms</a></li>
-                    <li><a href="http://blog.bdero.me/category/experiments.html">Experiments</a></li>
-                    <li><a href="http://blog.bdero.me/category/games.html">Games</a></li>
-                    <li><a href="http://blog.bdero.me/category/scripts.html">Scripts</a></li>
-                    <li><a href="http://blog.bdero.me/category/simulations.html">Simulations</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://blog.bdero.me/unlikr.html">"Unlikr": Unlike everything on Tumblr</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2013-12-04T23:28:00-05:00">
-                Published: Wed 04 December 2013
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://blog.bdero.me/author/brandon-derosier.html">Brandon DeRosier</a>
-        </address>
-<p>In <a href="http://blog.bdero.me/category/scripts.html">Scripts</a>.</p>
-<p>tags: <a href="http://blog.bdero.me/tag/firefox.html">firefox</a> <a href="http://blog.bdero.me/tag/python.html">python</a> <a href="http://blog.bdero.me/tag/robot.html">robot</a> <a href="http://blog.bdero.me/tag/script.html">script</a> <a href="http://blog.bdero.me/tag/selenium.html">selenium</a> <a href="http://blog.bdero.me/tag/tool.html">tool</a> <a href="http://blog.bdero.me/tag/tumblr.html">tumblr</a> <a href="http://blog.bdero.me/tag/unlikr.html">unlikr</a> </p>
-</footer><!-- /.post-info --><h1><strong>Warning: This probably doesn't work anymore!</strong></h1>
-<p><strong>This script is brittle because it relies on non-versioned endpoints not intended for robots. Some people have messaged me to let me know that this script doesn't work anymore. Despite this, I'm keeping it here as a reference in case others may find it useful.</strong></p>
-<p>So, if you're not so much like me, you use Tumblr - and you probably have thousands of likes and reblogs. Of course, your taste for material might change over time.</p>
-<p>Originally sketched in an IPython Notebook for my partner, the following is a quick Python 2 script to wipe out <em>most</em> of your likes in a way that's pretty difficult for the Tumblr police to detect<!--more-->:</p>
-<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
-<span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
-<span class="kn">from</span> <span class="nn">selenium.webdriver.common.keys</span> <span class="kn">import</span> <span class="n">Keys</span>
-<span class="kn">from</span> <span class="nn">selenium.common.exceptions</span> <span class="kn">import</span> <span class="n">NoSuchElementException</span>
-<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
-<span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">argv</span>
-<span class="n">find_likes</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">browser</span><span class="p">:</span> <span class="n">browser</span><span class="o">.</span><span class="n">find_elements_by_css_selector</span><span class="p">(</span><span class="s1">&#39;.post_control.like.liked&#39;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">find_next_page</span><span class="p">(</span><span class="n">browser</span><span class="p">):</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">browser</span><span class="o">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s1">&#39;next_page_link&#39;</span><span class="p">)</span>
-    <span class="k">except</span> <span class="n">NoSuchElementException</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
-        <span class="k">return</span> <span class="bp">None</span>
-<span class="k">def</span> <span class="nf">login</span><span class="p">(</span><span class="n">browser</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
-    <span class="c1"># Login to Tumblr</span>
-    <span class="n">browser</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://www.tumblr.com/login&#39;</span><span class="p">)</span>
-    <span class="n">e</span> <span class="o">=</span> <span class="n">browser</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s1">&#39;user[email]&#39;</span><span class="p">)</span>
-    <span class="n">e</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="n">username</span><span class="p">)</span>
-    <span class="n">e</span> <span class="o">=</span> <span class="n">browser</span><span class="o">.</span><span class="n">find_element_by_name</span><span class="p">(</span><span class="s1">&#39;user[password]&#39;</span><span class="p">)</span>
-    <span class="n">e</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="n">password</span> <span class="o">+</span> <span class="n">Keys</span><span class="o">.</span><span class="n">RETURN</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">unlikr</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
-    <span class="n">browser</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Firefox</span><span class="p">()</span>
-    <span class="n">login</span><span class="p">(</span><span class="n">browser</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
-    <span class="c1"># Go to likes page</span>
-    <span class="n">browser</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://www.tumblr.com/likes&#39;</span><span class="p">)</span>
-    <span class="c1"># Destroy those likes!</span>
-    <span class="n">likes</span> <span class="o">=</span> <span class="n">find_likes</span><span class="p">(</span><span class="n">browser</span><span class="p">)</span>
-    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">button</span> <span class="ow">in</span> <span class="n">likes</span><span class="p">:</span>
-            <span class="n">button</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
-            <span class="c1"># You can technically just floor it, but you might look too much like a robot</span>
-            <span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
-
-        <span class="n">browser</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">browser</span><span class="o">.</span><span class="n">current_url</span><span class="p">)</span> <span class="c1"># Faster than refreshes</span>
-        <span class="n">likes</span> <span class="o">=</span> <span class="n">find_likes</span><span class="p">(</span><span class="n">browser</span><span class="p">)</span>
-        <span class="c1"># Every once in a while you have to move to a new page instead of refreshing</span>
-        <span class="c1"># Tumblr seems like kind of a fuck up in this regard</span>
-        <span class="n">next_page</span> <span class="o">=</span> <span class="n">find_next_page</span><span class="p">(</span><span class="n">browser</span><span class="p">)</span>
-        <span class="k">while</span> <span class="n">next_page</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">likes</span><span class="p">:</span>
-            <span class="n">next_page</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
-            <span class="n">likes</span> <span class="o">=</span> <span class="n">find_likes</span><span class="p">(</span><span class="n">browser</span><span class="p">)</span>
-            <span class="n">next_page</span> <span class="o">=</span> <span class="n">find_next_page</span><span class="p">(</span><span class="n">browser</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">usage</span><span class="p">():</span>
-    <span class="k">print</span> <span class="s1">&#39;usage: unlikr [username] [password]&#39;</span>
-<span class="k">def</span> <span class="nf">die</span><span class="p">(</span><span class="n">code</span><span class="p">):</span>
-    <span class="n">usage</span><span class="p">()</span>
-    <span class="nb">exit</span><span class="p">(</span><span class="n">code</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">argv</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
-        <span class="n">die</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">username</span><span class="p">,</span> <span class="n">password</span> <span class="o">=</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
-    <span class="n">unlikr</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
-</pre></div>
+<nav id="menu">
+  <a class="close-button">Close</a>
+  <div class="nav-wrapper">
+    <p class="nav-label">Menu</p>
+    <ul>
 
 
-<h3>To use:</h3>
+    </ul>
+  </div>
+</nav>
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header id="blog-header" class="has-cover">
+      <div class="inner">
+        <nav id="navigation">
+            <span id="home-button" class="nav-button">
+                <a class="home-button" href="../" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+            </span>
+          <span id="menu-button" class="nav-button">
+            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+          </span>
+        </nav>
+        <h1 class="post-title">Tag python</h1>
+        <span class="blog-description">Posts: 1</span>
+            <div class="blog-cover cover" style="background-image: url('images/banner1500x500.jpeg')">            
+      </div>
+    </header>
 
-<ol>
-<li><strong>Install <a href="http://www.python.org/download/" title="Python download page" target="_blank">Python 2</a></strong>.</li>
-<li><strong>Install <a href="https://www.mozilla.org/firefox" title="Mozilla Firefox site" target="_blank">Mozilla Firefox</a></strong>.</li>
-<li><strong>Install <a href="http://www.pip-installer.org/en/latest/installing.html" title="How to install pip" target="_blank">pip</a></strong>, the Python package manager. Windows users see <a href="https://stackoverflow.com/a/12476379" title="How to install pip on Windows" target="_blank">this guide</a>.</li>
-<li><strong>Install <a href="https://pypi.python.org/pypi/selenium" title="Selenium PyPI page" target="_blank">Selenium</a> using pip</strong>: run `<strong>pip install selenium</strong>` from a terminal.</li>
-<li><strong>Save the above script</strong> as `<strong>unlikr.py</strong>`.</li>
-<li><strong>Run the script</strong> by executing `<strong>python unlikr.py [USERNAME] [PASSWORD]</strong>` in a terminal, replacing `<strong>[USERNAME]</strong>` and `<strong>[PASSWORD]</strong>` with your respective Tumblr credentials.</li>
-</ol>
+  <section id="wrapper">
+    <a class="hidden-close"></a>
 
-<h3>What it does:</h3>
+<div id="index" class="container">
+  <main class="content" role="main">
+    <div class="extra-pagination">
+<nav class="pagination" role="pagination">
+  <div class="inner">
+    <span class="pagination-info">Page 1 / 1</span>
+    <div class="clear"></div>
+  </div>
+</nav>
+    </div>
 
-<p>Upon running the script, a new instance of Firefox will open with a blank profile, navigate to Tumblr, login, navigate to your likes page, and proceed to click the unlike buttons for every post at a maximum speed of 5 unlikes per second. You can then proceed to go get some tea or coffee. If you have 10,000 likes, the script will probably take about an hour to clean it all out - 33 minutes for unliking things, and the rest for page refreshes and hitting the <code>Next Page</code> button.</p>
-<h3>What it doesn't:</h3>
+        <article class="post">
+        <div class="inner">
+            <header class="post-header">         
+                <h2 class="post-title"><a href="../unlikr.html" rel="bookmark" title="Permalink to "Unlikr": Unlike everything on Tumblr">"Unlikr": Unlike everything on Tumblr</a>
+                </h2>
+                <span class="post-meta">
+                        <a href="../author/bdero.html">Bdero</a>
+                     | <time datetime="Wed 04 December 2013">Wed 04 December 2013</time>
+                </span>
+                <div class="clear"></div>
+            </header>
+                <section class="post-excerpt">
+                    <p>
+                        So, if you're not so much like me, you use Tumblr - and you probably have thousands of likes and reblogs. Of course, your taste for material might change over time.
+                    </p>
+                </section>
+            </div>
+        </article>
 
-<p>Tumblr is weird. Search around for people complaining about not being able to look through all of their liked content and you'll find many examples.
-<strong>This tool can't beat the fact that Tumblr hides things from you</strong>, so you might reach a point where the script has been hitting the <code>Next Page</code> hundreds of times without finding a single <code>like</code>. At this point, you're likely not going to find any more content to unlike, even if Tumblr's reporting that you still <code>like</code> hundreds or thousands of posts.</p>
-<h3>Why Selenium?</h3>
+<nav class="pagination" role="pagination">
+  <div class="inner">
+    <span class="pagination-info">Page 1 / 1</span>
+    <div class="clear"></div>
+  </div>
+</nav>
+  </main>
+</div>
+      <!-- TODO : Body class -->
+    <div id="body-class" style="display: none;" class=""></div>
 
-<p>I was having a Selenium kind of day and I didn't feel like dancing around any client-side verification. Sure, you might need a display to run it - but if you use Tumblr, you've probably got one. Besides, look at how simple that script is with Firefox doing all the work!</p>
-<p>If you'd like to use this and you're having trouble getting it to work, please leave a comment below and I will help you.</p>                </article>
-            </aside><!-- /#featured -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+    <footer id="footer">
+      <div class="inner">
+        <section class="credits">
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+          <span class="credits-theme">Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a></span>
+          <span class="credits-software">Published with <a href="https://github.com/getpelican/pelican" rel="nofollow">Pelican</a></span>
+        </section>
+      </div>
+    </footer>
+  </section>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+  <script type="text/javascript" src="../theme/js/script.js"></script>
 
 </body>
 </html>

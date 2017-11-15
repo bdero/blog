@@ -1,59 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="utf-8" />
-        <title>Prototype: "Just the Basics" v0.2</title>
-        <link rel="stylesheet" href="http://blog.bdero.me/theme/css/main.css" />
+      <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
+  <title>Prototype: "Just the Basics" v0.2</title>
+
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="origin" />
+  <meta name="generator" content="Pelican" />
+  <link href="./" rel="canonical" />
+
+  <!-- Feed -->
+        <link href="https://blog.bdero.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="bran's blog Full Atom Feed" />
+          <link href="https://blog.bdero.me/feeds/games.atom.xml" type="application/atom+xml" rel="alternate" title="bran's blog Categories Atom Feed" />
+
+  <link href="./theme/css/style.css" type="text/css" rel="stylesheet" />
+
+  <!-- Code highlight color scheme -->
+      <link href="./theme/css/code_blocks/github.css" rel="stylesheet">
+
+
+  <!-- Custom fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  <script src="https://use.fontawesome.com/ec379960cb.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+    <link href="./just-the-basics-2.html" rel="canonical" />
+
+        <meta name="description" content="It's week two with this thing and I met the goals I set at the last minute as usual. It's now got bullets firing, aiming with or without...">
+
+        <meta name="author" content="bdero">
+
+        <meta name="tags" content="2.5d">
+        <meta name="tags" content="browser">
+        <meta name="tags" content="canvas">
+        <meta name="tags" content="gridwars">
+        <meta name="tags" content="html5">
+        <meta name="tags" content="interactive">
+        <meta name="tags" content="ivank.js">
+        <meta name="tags" content="javascript">
+        <meta name="tags" content="jsdoc">
+        <meta name="tags" content="just the basics">
+        <meta name="tags" content="particles">
+        <meta name="tags" content="pointer lock controls">
+        <meta name="tags" content="prototype">
+        <meta name="tags" content="shooter">
+        <meta name="tags" content="space">
+        <meta name="tags" content="top down">
+        <meta name="tags" content="vector graphics">
+        <meta name="tags" content="webgl">
+
+
+
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="bran's blog"/>
+<meta property="og:title" content="Prototype: "Just the Basics" v0.2"/>
+<meta property="og:description" content="It's week two with this thing and I met the goals I set at the last minute as usual. It's now got bullets firing, aiming with or without..."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="./just-the-basics-2.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2013-11-12 00:43:00-05:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="./author/bdero.html">
+<meta property="article:section" content="Games"/>
+<meta property="article:tag" content="2.5d"/>
+<meta property="article:tag" content="browser"/>
+<meta property="article:tag" content="canvas"/>
+<meta property="article:tag" content="gridwars"/>
+<meta property="article:tag" content="html5"/>
+<meta property="article:tag" content="interactive"/>
+<meta property="article:tag" content="ivank.js"/>
+<meta property="article:tag" content="javascript"/>
+<meta property="article:tag" content="jsdoc"/>
+<meta property="article:tag" content="just the basics"/>
+<meta property="article:tag" content="particles"/>
+<meta property="article:tag" content="pointer lock controls"/>
+<meta property="article:tag" content="prototype"/>
+<meta property="article:tag" content="shooter"/>
+<meta property="article:tag" content="space"/>
+<meta property="article:tag" content="top down"/>
+<meta property="article:tag" content="vector graphics"/>
+<meta property="article:tag" content="webgl"/>
+<meta property="og:image" content="./images/banner1500x500.jpeg">
+
+<!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cheesekeg">
+    <meta name="twitter:title" content="Prototype: "Just the Basics" v0.2">
+    <meta name="twitter:url" content="./just-the-basics-2.html">
+
+        <meta name="twitter:image:src" content="./images/banner1500x500.jpeg">
+
+      <meta name="twitter:description" content="It's week two with this thing and I met the goals I set at the last minute as usual. It's now got bullets firing, aiming with or without...">
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "Prototype: "Just the Basics" v0.2",
+  "headline": "Prototype: "Just the Basics" v0.2",
+  "datePublished": "2013-11-12 00:43:00-05:00",
+  "dateModified": "",
+  "author": {
+    "@type": "Person",
+    "name": "bdero",
+    "url": "./author/bdero.html"
+  },
+  "image": "./images/banner1500x500.jpeg",
+  "url": "./just-the-basics-2.html",
+  "description": "It's week two with this thing and I met the goals I set at the last minute as usual. It's now got bullets firing, aiming with or without..."
+}
+</script>
 </head>
+<!-- TODO : Body class -->
+<body class="home-template">
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://blog.bdero.me/">bran's blog </a></h1>
-                <nav><ul>
-                    <li><a href="http://blog.bdero.me/category/algorithms.html">Algorithms</a></li>
-                    <li><a href="http://blog.bdero.me/category/experiments.html">Experiments</a></li>
-                    <li class="active"><a href="http://blog.bdero.me/category/games.html">Games</a></li>
-                    <li><a href="http://blog.bdero.me/category/scripts.html">Scripts</a></li>
-                    <li><a href="http://blog.bdero.me/category/simulations.html">Simulations</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="http://blog.bdero.me/just-the-basics-2.html" rel="bookmark"
-           title="Permalink to Prototype: "Just the Basics" v0.2">Prototype: "Just the Basics" v0.2</a></h1>
+<nav id="menu">
+  <a class="close-button">Close</a>
+  <div class="nav-wrapper">
+    <p class="nav-label">Menu</p>
+    <ul>
+
+
+    </ul>
+  </div>
+</nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header id="post-header" class="has-cover">
+      <div class="inner">
+        <nav id="navigation">
+            <span id="home-button" class="nav-button">
+                <a class="home-button" href="./" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+            </span>
+          <span id="menu-button" class="nav-button">
+            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+          </span>
+        </nav>
+        <h1 class="post-title">Prototype: "Just the Basics" v0.2</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="./author/bdero.html">Bdero</a>
+            | <time datetime="Tue 12 November 2013">Tue 12 November 2013</time>
+        </span>
+        <!-- TODO : Modified check -->
+            <div class="post-cover cover" style="background-image: url('./images/banner1500x500.jpeg')">
+      </div>
     </header>
 
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2013-11-12T00:43:00-05:00">
-                Published: Tue 12 November 2013
-        </abbr>
+  <section id="wrapper">
+    <a class="hidden-close"></a>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://blog.bdero.me/author/brandon-derosier.html">Brandon DeRosier</a>
-        </address>
-<p>In <a href="http://blog.bdero.me/category/games.html">Games</a>.</p>
-<p>tags: <a href="http://blog.bdero.me/tag/25d.html">2.5d</a> <a href="http://blog.bdero.me/tag/browser.html">browser</a> <a href="http://blog.bdero.me/tag/canvas.html">canvas</a> <a href="http://blog.bdero.me/tag/gridwars.html">gridwars</a> <a href="http://blog.bdero.me/tag/html5.html">html5</a> <a href="http://blog.bdero.me/tag/interactive.html">interactive</a> <a href="http://blog.bdero.me/tag/ivankjs.html">ivank.js</a> <a href="http://blog.bdero.me/tag/javascript.html">javascript</a> <a href="http://blog.bdero.me/tag/jsdoc.html">jsdoc</a> <a href="http://blog.bdero.me/tag/just-the-basics.html">just the basics</a> <a href="http://blog.bdero.me/tag/particles.html">particles</a> <a href="http://blog.bdero.me/tag/pointer-lock-controls.html">pointer lock controls</a> <a href="http://blog.bdero.me/tag/prototype.html">prototype</a> <a href="http://blog.bdero.me/tag/shooter.html">shooter</a> <a href="http://blog.bdero.me/tag/space.html">space</a> <a href="http://blog.bdero.me/tag/top-down.html">top down</a> <a href="http://blog.bdero.me/tag/vector-graphics.html">vector graphics</a> <a href="http://blog.bdero.me/tag/webgl.html">webgl</a> </p>
-</footer><!-- /.post-info -->      <p>It's week two with this thing and I met the goals I set at the last minute as usual. It's now got bullets firing, aiming with or without pointer lock controls, and simple enemies to kill called "Spin Stars". The delta time multiplier is being properly distributed and used with most everything (even with asymptotic functions like camera easing), so if you're running it fullscreen on legacy hardware and you're experiencing significant frame lag, it should still sort of <em>feel</em> like things are the correct speed.</p>
+    <!-- Post content -->
+    <main class="content" role="main">
+        <article class="post">
+        <div class="inner">
+            <section class="post-content">
+                <p>It's week two with this thing and I met the goals I set at the last minute as usual. It's now got bullets firing, aiming with or without pointer lock controls, and simple enemies to kill called "Spin Stars". The delta time multiplier is being properly distributed and used with most everything (even with asymptotic functions like camera easing), so if you're running it fullscreen on legacy hardware and you're experiencing significant frame lag, it should still sort of <em>feel</em> like things are the correct speed.</p>
 <p>I also modularized the code a bit and added JsDoc/Doxygen compatible comments for each file, class, and function. I haven't tried to generate any docs for it yet, but why not? I'd love to see this code get hacked on and reused. <!--more--></p>
 <iframe src="http://bdero.me/jtb-releases/v0.2/" height="400" width="100%" frameborder="no"></iframe>
 
 <h5><strong>If you don't see anything in the frame above, then either <a title="Check if your browser supports WebGL" href="http://get.webgl.org/" target="_blank">your browser doesn't support WebGL</a>, or your graphics driver is not sufficient for initializing a WebGL context.</strong></h5>
 
 <p>The source code is available on <a title="Just the Basics v0.2 source code" href="https://github.com/bdero/just-the-basics/tree/v0.2" target="_blank">GitHub</a>.</p>
-<p>To take control of the canvas, click on it. Like my <a href="http://blog.bdero.me/just-the-basics-1.html" title="Prototype: “Just the Basics” v0.1">previous post</a>, you can use the classic <strong>W, S, A, and D keys</strong> (or the arrow keys) to navigate the ship around the field, but now you can control the direction of a cannon attached to the ship by <strong>moving the mouse</strong> around over the canvas.</p>
+<p>To take control of the canvas, click on it. Like my <a href="./just-the-basics-1.html" title="Prototype: “Just the Basics” v0.1">previous post</a>, you can use the classic <strong>W, S, A, and D keys</strong> (or the arrow keys) to navigate the ship around the field, but now you can control the direction of a cannon attached to the ship by <strong>moving the mouse</strong> around over the canvas.</p>
 <p>You can also control the cannon by accepting the pointer lock request which fires every time the canvas is clicked, given that your browser supports it. This hides the mouse so you don't have to worry about accidentally moving the mouse out of the canvas and losing control.</p>
 <p>Lastly, <strong>holding the mouse down</strong> causes the ship's cannon to continuously fire.</p>
 <p>I'd never done anything with a collision detection grid before, but I figured that's what this would need if I want to stuff hundreds of enemies into the playing field and expect it to still run smoothly.</p>
 <figure style="width: 300px">
-  <a href="http://blog.bdero.me/images/collision_plans.jpeg" target="_blank">
-    <img class="size-medium wp-image-166" alt="Quick plans for the collision detection" src="http://blog.bdero.me/images/collision_plans.jpeg" width="300" height="191" />
+  <a href="./images/collision_plans.jpeg" target="_blank">
+    <img class="size-medium wp-image-166" alt="Quick plans for the collision detection" src="./images/collision_plans.jpeg" width="300" height="191" />
   </a>
   <figcaption>
     Quick plans for the collision detection
@@ -62,41 +198,75 @@
 
 <p>The whole "ActiveObject" thing for entities that do collision checking didn't end up happening since the player and the bullets will need to do different things upon collision. Instead, there's a general method in World that takes an entity and figures out if any enemies are colliding with it using the world's collision grid. Besides, why would I want to go overkill worrying about how everything involving entities needs to be stuffed somewhere within the entity hierarchy? Last time I checked, this isn't Java.</p>
 <p>The resulting collision grid seems to be fast for bullet-to-entity collision detection so far, though I've yet to test it to its limit!</p>
-<p><img src="http://blog.bdero.me/images/lots_of_spin_stars.png" alt="Lots of Spin Stars" /></p>
+<p><img src="./images/lots_of_spin_stars.png" alt="Lots of Spin Stars" /></p>
 <p>For the next time around, I'd like to have a couple more enemies, a timeline system, and maybe player death along with a way to start over.</p>
 <p>More to come!</p>
 <p>Graphics provided by WebGL via <a href="http://lib.ivank.net/" target="_blank">IvanK.js</a>.</p>
-    </div><!-- /.entry-content -->
+            </section>
 
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+            <section class="post-info">
+                <div class="post-share">
+                    <a class="twitter" href="https://twitter.com/share?text=Prototype: "Just the Basics" v0.2&amp;url=./just-the-basics-2.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
+                    </a>
+                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=./just-the-basics-2.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
+                    </a>
+                    <a class="googleplus" href="https://plus.google.com/share?url=./just-the-basics-2.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
+                    </a>
+                    <div class="clear"></div>
+                </div>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+                <aside class="post-tags">
+<a href="./tag/25d.html">2.5d</a><a href="./tag/browser.html">browser</a><a href="./tag/canvas.html">canvas</a><a href="./tag/gridwars.html">gridwars</a><a href="./tag/html5.html">html5</a><a href="./tag/interactive.html">interactive</a><a href="./tag/ivankjs.html">ivank.js</a><a href="./tag/javascript.html">javascript</a><a href="./tag/jsdoc.html">jsdoc</a><a href="./tag/just-the-basics.html">just the basics</a><a href="./tag/particles.html">particles</a><a href="./tag/pointer-lock-controls.html">pointer lock controls</a><a href="./tag/prototype.html">prototype</a><a href="./tag/shooter.html">shooter</a><a href="./tag/space.html">space</a><a href="./tag/top-down.html">top down</a><a href="./tag/vector-graphics.html">vector graphics</a><a href="./tag/webgl.html">webgl</a>                </aside>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+                <div class="clear"></div>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+                <aside class="post-author">
+
+
+                        <figure class="post-author-avatar">
+                            <img src="./images/avatar.jpg" alt="Brandon DeRosier" />
+                        </figure>
+                    <div class="post-author-bio">
+                        <h4 class="post-author-name"><a href="./author/bdero.html">Brandon DeRosier</a></h4>
+                            <p class="post-author-about">I'm a Full Stack Engineer with a lot of interests. Please see my GitHub profile if you're interested in my work. :)</p>
+                            <span class="post-author-location"><i class="fa fa-location"></i> Boston, MA</span>
+                            <span class="post-author-github"><a target="_blank" href="https://github.com/bdero"><i class="fa fa-github"></i> GitHub</a></span>
+                            <span class="post-author-keybase"><a target="_blank" href="https://keybase.io/bdero"><i class="fa fa-key"></i> Keybase</a></span>
+                            <span class="post-author-linkedin"><a target="_blank" href="https://www.linkedin.com/in/bderosier"><i class="fa fa-linkedin"></i> LinkedIn</a></span>
+                            <span class="post-author-twitter"><a target="_blank" href="https://twitter.com/cheesekeg"><i class="fa fa-twitter"></i> Twitter</a></span>
+                    </div>
+                    <div class="clear"></div>
+                </aside>
+
+                </section>
+
+
+                <aside class="post-nav">
+                    <div class="clear"></div>
+                </aside>
+
+            </div>
+        </article>
+    </main>
+      <!-- TODO : Body class -->
+    <div id="body-class" style="display: none;" class=""></div>
+
+    <footer id="footer">
+      <div class="inner">
+        <section class="credits">
+
+
+          <span class="credits-theme">Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a></span>
+          <span class="credits-software">Published with <a href="https://github.com/getpelican/pelican" rel="nofollow">Pelican</a></span>
+        </section>
+      </div>
+    </footer>
+  </section>
+
+  <script type="text/javascript" src="./theme/js/script.js"></script>
 
 </body>
 </html>

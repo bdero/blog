@@ -1,47 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="utf-8" />
-        <title>Mini game: Particle Benchmark</title>
-        <link rel="stylesheet" href="http://blog.bdero.me/theme/css/main.css" />
+      <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
+  <title>Mini game: Particle Benchmark</title>
+
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="origin" />
+  <meta name="generator" content="Pelican" />
+  <link href="./" rel="canonical" />
+
+  <!-- Feed -->
+        <link href="https://blog.bdero.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="bran's blog Full Atom Feed" />
+          <link href="https://blog.bdero.me/feeds/games.atom.xml" type="application/atom+xml" rel="alternate" title="bran's blog Categories Atom Feed" />
+
+  <link href="./theme/css/style.css" type="text/css" rel="stylesheet" />
+
+  <!-- Code highlight color scheme -->
+      <link href="./theme/css/code_blocks/github.css" rel="stylesheet">
+
+
+  <!-- Custom fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  <script src="https://use.fontawesome.com/ec379960cb.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+    <link href="./particle-benchmark.html" rel="canonical" />
+
+        <meta name="description" content="This is another oldie - and it's sort of a mini game because, even though there's no real way to win (I just played it by ear without...">
+
+        <meta name="author" content="bdero">
+
+        <meta name="tags" content="2.5d">
+        <meta name="tags" content="browser">
+        <meta name="tags" content="canvas">
+        <meta name="tags" content="circles">
+        <meta name="tags" content="html5">
+        <meta name="tags" content="interactive">
+        <meta name="tags" content="javascript">
+        <meta name="tags" content="mini game">
+        <meta name="tags" content="monkey">
+        <meta name="tags" content="oldie">
+        <meta name="tags" content="particles">
+        <meta name="tags" content="vector graphics">
+
+
+
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="bran's blog"/>
+<meta property="og:title" content="Mini game: Particle Benchmark"/>
+<meta property="og:description" content="This is another oldie - and it's sort of a mini game because, even though there's no real way to win (I just played it by ear without..."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="./particle-benchmark.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2013-10-24 00:50:00-04:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="./author/bdero.html">
+<meta property="article:section" content="Games"/>
+<meta property="article:tag" content="2.5d"/>
+<meta property="article:tag" content="browser"/>
+<meta property="article:tag" content="canvas"/>
+<meta property="article:tag" content="circles"/>
+<meta property="article:tag" content="html5"/>
+<meta property="article:tag" content="interactive"/>
+<meta property="article:tag" content="javascript"/>
+<meta property="article:tag" content="mini game"/>
+<meta property="article:tag" content="monkey"/>
+<meta property="article:tag" content="oldie"/>
+<meta property="article:tag" content="particles"/>
+<meta property="article:tag" content="vector graphics"/>
+<meta property="og:image" content="./images/banner1500x500.jpeg">
+
+<!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cheesekeg">
+    <meta name="twitter:title" content="Mini game: Particle Benchmark">
+    <meta name="twitter:url" content="./particle-benchmark.html">
+
+        <meta name="twitter:image:src" content="./images/banner1500x500.jpeg">
+
+      <meta name="twitter:description" content="This is another oldie - and it's sort of a mini game because, even though there's no real way to win (I just played it by ear without...">
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "Mini game: Particle Benchmark",
+  "headline": "Mini game: Particle Benchmark",
+  "datePublished": "2013-10-24 00:50:00-04:00",
+  "dateModified": "",
+  "author": {
+    "@type": "Person",
+    "name": "bdero",
+    "url": "./author/bdero.html"
+  },
+  "image": "./images/banner1500x500.jpeg",
+  "url": "./particle-benchmark.html",
+  "description": "This is another oldie - and it's sort of a mini game because, even though there's no real way to win (I just played it by ear without..."
+}
+</script>
 </head>
+<!-- TODO : Body class -->
+<body class="home-template">
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://blog.bdero.me/">bran's blog </a></h1>
-                <nav><ul>
-                    <li><a href="http://blog.bdero.me/category/algorithms.html">Algorithms</a></li>
-                    <li><a href="http://blog.bdero.me/category/experiments.html">Experiments</a></li>
-                    <li class="active"><a href="http://blog.bdero.me/category/games.html">Games</a></li>
-                    <li><a href="http://blog.bdero.me/category/scripts.html">Scripts</a></li>
-                    <li><a href="http://blog.bdero.me/category/simulations.html">Simulations</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="http://blog.bdero.me/particle-benchmark.html" rel="bookmark"
-           title="Permalink to Mini game: Particle Benchmark">Mini game: Particle Benchmark</a></h1>
+<nav id="menu">
+  <a class="close-button">Close</a>
+  <div class="nav-wrapper">
+    <p class="nav-label">Menu</p>
+    <ul>
+
+
+    </ul>
+  </div>
+</nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header id="post-header" class="has-cover">
+      <div class="inner">
+        <nav id="navigation">
+            <span id="home-button" class="nav-button">
+                <a class="home-button" href="./" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+            </span>
+          <span id="menu-button" class="nav-button">
+            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+          </span>
+        </nav>
+        <h1 class="post-title">Mini game: Particle Benchmark</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="./author/bdero.html">Bdero</a>
+            | <time datetime="Thu 24 October 2013">Thu 24 October 2013</time>
+        </span>
+        <!-- TODO : Modified check -->
+            <div class="post-cover cover" style="background-image: url('./images/banner1500x500.jpeg')">
+      </div>
     </header>
 
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2013-10-24T00:50:00-04:00">
-                Published: Thu 24 October 2013
-        </abbr>
+  <section id="wrapper">
+    <a class="hidden-close"></a>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://blog.bdero.me/author/brandon-derosier.html">Brandon DeRosier</a>
-        </address>
-<p>In <a href="http://blog.bdero.me/category/games.html">Games</a>.</p>
-<p>tags: <a href="http://blog.bdero.me/tag/25d.html">2.5d</a> <a href="http://blog.bdero.me/tag/browser.html">browser</a> <a href="http://blog.bdero.me/tag/canvas.html">canvas</a> <a href="http://blog.bdero.me/tag/circles.html">circles</a> <a href="http://blog.bdero.me/tag/html5.html">html5</a> <a href="http://blog.bdero.me/tag/interactive.html">interactive</a> <a href="http://blog.bdero.me/tag/javascript.html">javascript</a> <a href="http://blog.bdero.me/tag/mini-game.html">mini game</a> <a href="http://blog.bdero.me/tag/monkey.html">monkey</a> <a href="http://blog.bdero.me/tag/oldie.html">oldie</a> <a href="http://blog.bdero.me/tag/particles.html">particles</a> <a href="http://blog.bdero.me/tag/vector-graphics.html">vector graphics</a> </p>
-</footer><!-- /.post-info -->      <figure>
-  <img width="100%" src="http://blog.bdero.me/images/particles0.png" />
+    <!-- Post content -->
+    <main class="content" role="main">
+        <article class="post">
+        <div class="inner">
+            <section class="post-content">
+                <figure>
+  <img width="100%" src="./images/particles0.png" />
   <figcaption>
     Splash screen with dynamic particle text.
   </figcaption>
@@ -54,7 +178,7 @@
 
 <p>You can use the classic W, A, S, and D keys, or the arrow keys, to roll around. That's pretty much all you need to know. When compiling it as an Android application, it would rely on the gyroscope for movement to give it the "rolling a marble around on a surface" feel.</p>
 <figure>
-  <img width="100%" src="http://blog.bdero.me/images/particles1.png" />
+  <img width="100%" src="./images/particles1.png" />
   <figcaption>
     The "mini game" in action.
   </figcaption>
@@ -65,37 +189,71 @@
 <p>The experimental part was to make everything.. a particle. All display objects share common ancestry because they're all just circles of various colors and sizes.</p>
 <p>I wrote it in a proprietary BASIC-like language called Monkey and used its JavaScript translator. This isn't an endorsement. I do <em>not</em> recommend Monkey due to both its proprietary nature and the fact that this could have been more effectively and easily written directly in JavaScript.</p>
 <p>The benefit of Monkey at the time was that it translates code for use with a handful of different platforms and frameworks almost seamlessly. Why didn't I just use <a title="Haxe official website" href="http://haxe.org/" target="_blank">Haxe</a>? Because I didn't do any research.</p>
-    </div><!-- /.entry-content -->
+            </section>
 
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+            <section class="post-info">
+                <div class="post-share">
+                    <a class="twitter" href="https://twitter.com/share?text=Mini game: Particle Benchmark&amp;url=./particle-benchmark.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
+                    </a>
+                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=./particle-benchmark.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
+                    </a>
+                    <a class="googleplus" href="https://plus.google.com/share?url=./particle-benchmark.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
+                    </a>
+                    <div class="clear"></div>
+                </div>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+                <aside class="post-tags">
+<a href="./tag/25d.html">2.5d</a><a href="./tag/browser.html">browser</a><a href="./tag/canvas.html">canvas</a><a href="./tag/circles.html">circles</a><a href="./tag/html5.html">html5</a><a href="./tag/interactive.html">interactive</a><a href="./tag/javascript.html">javascript</a><a href="./tag/mini-game.html">mini game</a><a href="./tag/monkey.html">monkey</a><a href="./tag/oldie.html">oldie</a><a href="./tag/particles.html">particles</a><a href="./tag/vector-graphics.html">vector graphics</a>                </aside>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+                <div class="clear"></div>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+                <aside class="post-author">
+
+
+                        <figure class="post-author-avatar">
+                            <img src="./images/avatar.jpg" alt="Brandon DeRosier" />
+                        </figure>
+                    <div class="post-author-bio">
+                        <h4 class="post-author-name"><a href="./author/bdero.html">Brandon DeRosier</a></h4>
+                            <p class="post-author-about">I'm a Full Stack Engineer with a lot of interests. Please see my GitHub profile if you're interested in my work. :)</p>
+                            <span class="post-author-location"><i class="fa fa-location"></i> Boston, MA</span>
+                            <span class="post-author-github"><a target="_blank" href="https://github.com/bdero"><i class="fa fa-github"></i> GitHub</a></span>
+                            <span class="post-author-keybase"><a target="_blank" href="https://keybase.io/bdero"><i class="fa fa-key"></i> Keybase</a></span>
+                            <span class="post-author-linkedin"><a target="_blank" href="https://www.linkedin.com/in/bderosier"><i class="fa fa-linkedin"></i> LinkedIn</a></span>
+                            <span class="post-author-twitter"><a target="_blank" href="https://twitter.com/cheesekeg"><i class="fa fa-twitter"></i> Twitter</a></span>
+                    </div>
+                    <div class="clear"></div>
+                </aside>
+
+                </section>
+
+
+                <aside class="post-nav">
+                    <div class="clear"></div>
+                </aside>
+
+            </div>
+        </article>
+    </main>
+      <!-- TODO : Body class -->
+    <div id="body-class" style="display: none;" class=""></div>
+
+    <footer id="footer">
+      <div class="inner">
+        <section class="credits">
+
+
+          <span class="credits-theme">Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a></span>
+          <span class="credits-software">Published with <a href="https://github.com/getpelican/pelican" rel="nofollow">Pelican</a></span>
+        </section>
+      </div>
+    </footer>
+  </section>
+
+  <script type="text/javascript" src="./theme/js/script.js"></script>
 
 </body>
 </html>

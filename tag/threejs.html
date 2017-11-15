@@ -1,111 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="utf-8" />
-        <title>bran's blog - three.js</title>
-        <link rel="stylesheet" href="http://blog.bdero.me/theme/css/main.css" />
+      <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
+  <title>bran's blog - Tag three.js</title>
+
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="origin" />
+  <meta name="generator" content="Pelican" />
+  <link href="../" rel="canonical" />
+
+  <!-- Feed -->
+        <link href="https://blog.bdero.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="bran's blog Full Atom Feed" />
+
+  <link href="../theme/css/style.css" type="text/css" rel="stylesheet" />
+
+  <!-- Code highlight color scheme -->
+      <link href="../theme/css/code_blocks/github.css" rel="stylesheet">
+
+
+  <!-- Custom fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  <script src="https://use.fontawesome.com/ec379960cb.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="bran's blog"/>
+<meta property="og:type" content="blog"/>
+<meta property="og:title" content="bran's blog"/>
+<meta property="og:description" content="View the blog."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="../"/>
+<meta property="og:image" content="../images/banner1500x500.jpeg">
+
+<!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@cheesekeg">
+  <meta name="twitter:title" content="bran's blog">
+  <meta name="twitter:description" content="View the blog.">
+  <meta name="twitter:url" content="../">
+  <meta name="twitter:image:src" content="../images/banner1500x500.jpeg">
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Website",
+  "name": " bran's blog ",
+  "url" : "../",
+  "image": "../images/banner1500x500.jpeg",
+  "description": "View the blog."
+}
+</script>
 </head>
+<!-- TODO : Body class -->
+<body class="home-template">
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://blog.bdero.me/">bran's blog </a></h1>
-                <nav><ul>
-                    <li><a href="http://blog.bdero.me/category/algorithms.html">Algorithms</a></li>
-                    <li><a href="http://blog.bdero.me/category/experiments.html">Experiments</a></li>
-                    <li><a href="http://blog.bdero.me/category/games.html">Games</a></li>
-                    <li><a href="http://blog.bdero.me/category/scripts.html">Scripts</a></li>
-                    <li><a href="http://blog.bdero.me/category/simulations.html">Simulations</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+<nav id="menu">
+  <a class="close-button">Close</a>
+  <div class="nav-wrapper">
+    <p class="nav-label">Menu</p>
+    <ul>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://blog.bdero.me/eight-experiments.html">Eight experiments</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2013-11-25T22:04:00-05:00">
-                Published: Mon 25 November 2013
-        </abbr>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://blog.bdero.me/author/brandon-derosier.html">Brandon DeRosier</a>
-        </address>
-<p>In <a href="http://blog.bdero.me/category/experiments.html">Experiments</a>.</p>
-<p>tags: <a href="http://blog.bdero.me/tag/25d.html">2.5d</a> <a href="http://blog.bdero.me/tag/2d.html">2d</a> <a href="http://blog.bdero.me/tag/3d.html">3d</a> <a href="http://blog.bdero.me/tag/bitmap-graphics.html">bitmap graphics</a> <a href="http://blog.bdero.me/tag/browser.html">browser</a> <a href="http://blog.bdero.me/tag/canvas.html">canvas</a> <a href="http://blog.bdero.me/tag/circles.html">circles</a> <a href="http://blog.bdero.me/tag/html5.html">html5</a> <a href="http://blog.bdero.me/tag/interactive.html">interactive</a> <a href="http://blog.bdero.me/tag/iteration.html">iteration</a> <a href="http://blog.bdero.me/tag/ivankjs.html">ivank.js</a> <a href="http://blog.bdero.me/tag/javascript.html">javascript</a> <a href="http://blog.bdero.me/tag/jsgamesoup.html">jsgamesoup</a> <a href="http://blog.bdero.me/tag/minimal.html">minimal</a> <a href="http://blog.bdero.me/tag/mobile.html">mobile</a> <a href="http://blog.bdero.me/tag/oldie.html">oldie</a> <a href="http://blog.bdero.me/tag/particles.html">particles</a> <a href="http://blog.bdero.me/tag/space.html">space</a> <a href="http://blog.bdero.me/tag/threejs.html">three.js</a> <a href="http://blog.bdero.me/tag/vector-graphics.html">vector graphics</a> <a href="http://blog.bdero.me/tag/webgl.html">webgl</a> </p>
-</footer><!-- /.post-info --><p>All throughout the development of my weekly experiments so far, there's been a lot of experimentation and learning on my part. Most of the "completed" examples are too fragmented or tiny for their own post, and some of them (especially the <a href="https://github.com/mrdoob/three.js" title="three.js Github repository" target="_blank">Three.js</a> ones) are based off of popular tutorials posted on other blogs. The source code for each of them has been kicking around in the "test" <a href="https://github.com/bdero?tab=repositories" title="cheesekeg.com Gitweb" target="_blank">repositories</a> from the beginning, though.</p>
-<p>Since I didn't manage to finish what I wanted to post this week, I've grouped all of these little experiments into one post (in no particular order) to make up for it.
-<!--more--></p>
-<p>None of the content is embedded for two reasons. Firstly, they all behave differently and I may or may not have figured out the greatest ways to make the experiments adjust to resizing. Secondly, I didn't want to crash your phone's browser with eight canvases and six WebGL contexts at the same time.</p>
-<p>Instead, the screenshots below directly link to each corresponding experiment. Some are interactive, some aren't. Some use <a href="http://lib.ivank.net/" title="IvanK Lib" target="_blank">IvanK.js</a>, others use <a href="https://github.com/mrdoob/three.js" title="three.js Github repository" target="_blank">Three.js</a> or <a href="https://github.com/chr15m/jsGameSoup" title="jsGameSoup GitHub repository" target="_blank">jsGameSoup</a>. Also, "pointer trail" is not recent, but I thought I'd throw it in anyhow.</p>
-<p>Try clicking and moving the mouse around on all of them to see what they do! c:
-<h3 style="text-align: center;">Click the images below to play the experiments.</h3>
-<a title="Pointer trail experiment" href="http://bdero.me/html5fun/projects/pointertrail2/" target="_blank"><img alt="Pointer trail experiment" src="http://blog.bdero.me/images/experiments/pointertrail.png" width="100%" /></a>
-<a title="Vertex shader experiment" href="http://bdero.me/threejs-tests/helloshader/" target="_blank"><img alt="Vertex shader experiment" src="http://blog.bdero.me/images/experiments/vertexshader.png" width="100%" /></a>
-<a title="Spheres experiment" href="http://bdero.me/threejs-tests/simplewebgl/" target="_blank"><img alt="Spheres experiment" src="http://blog.bdero.me/images/experiments/spheres.png" width="100%" /></a>
-<a title="Stars experiment" href="http://bdero.me/threejs-tests/stars/" target="_blank"><img alt="Stars experiment" src="http://blog.bdero.me/images/experiments/stars.png" width="100%" /></a>
-<a title="Squares experiment" href="http://bdero.me/ivank-tests/squares/" target="_blank"><img alt="Squares experiment" src="http://blog.bdero.me/images/experiments/squares.png" width="100%" /></a>
-<a title="Noise experiment" href="http://bdero.me/ivank-tests/noise/" target="_blank"><img alt="Noise experiment" src="http://blog.bdero.me/images/experiments/noise.png" width="100%" /></a>
-<a title="Hearts experiment" href="http://bdero.me/ivank-tests/hearts/" target="_blank"><img alt="Hearts experiment" src="http://blog.bdero.me/images/experiments/hearts.png" width="100%" /></a>
-<a title="Fire experiment" href="http://bdero.me/ivank-tests/fire/" target="_blank"><img alt="Fire experiment" src="http://blog.bdero.me/images/experiments/fire.png" width="100%" /></a></p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+    </ul>
+  </div>
+</nav>
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header id="blog-header" class="has-cover">
+      <div class="inner">
+        <nav id="navigation">
+            <span id="home-button" class="nav-button">
+                <a class="home-button" href="../" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+            </span>
+          <span id="menu-button" class="nav-button">
+            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+          </span>
+        </nav>
+        <h1 class="post-title">Tag three.js</h1>
+        <span class="blog-description">Posts: 2</span>
+            <div class="blog-cover cover" style="background-image: url('images/banner1500x500.jpeg')">            
+      </div>
+    </header>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://blog.bdero.me/infinite-simplex-noise-map-3d.html" rel="bookmark"
-                           title="Permalink to (Not-so) infinite simplex noise map in 3D">(Not-so) infinite simplex noise map in 3D</a></h1>
-                </header>
+  <section id="wrapper">
+    <a class="hidden-close"></a>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2013-10-14T23:20:00-04:00">
-                Published: Mon 14 October 2013
-        </abbr>
+<div id="index" class="container">
+  <main class="content" role="main">
+    <div class="extra-pagination">
+<nav class="pagination" role="pagination">
+  <div class="inner">
+    <span class="pagination-info">Page 1 / 1</span>
+    <div class="clear"></div>
+  </div>
+</nav>
+    </div>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://blog.bdero.me/author/brandon-derosier.html">Brandon DeRosier</a>
-        </address>
-<p>In <a href="http://blog.bdero.me/category/algorithms.html">Algorithms</a>.</p>
-<p>tags: <a href="http://blog.bdero.me/tag/3d.html">3d</a> <a href="http://blog.bdero.me/tag/algorithm.html">algorithm</a> <a href="http://blog.bdero.me/tag/browser.html">browser</a> <a href="http://blog.bdero.me/tag/canvas.html">canvas</a> <a href="http://blog.bdero.me/tag/html5.html">html5</a> <a href="http://blog.bdero.me/tag/interactive.html">interactive</a> <a href="http://blog.bdero.me/tag/javascript.html">javascript</a> <a href="http://blog.bdero.me/tag/minimal.html">minimal</a> <a href="http://blog.bdero.me/tag/perlin-noise.html">perlin noise</a> <a href="http://blog.bdero.me/tag/pointer-lock-controls.html">pointer lock controls</a> <a href="http://blog.bdero.me/tag/quake-controls.html">quake controls</a> <a href="http://blog.bdero.me/tag/simplex-noise.html">simplex noise</a> <a href="http://blog.bdero.me/tag/terrain.html">terrain</a> <a href="http://blog.bdero.me/tag/threejs.html">three.js</a> <a href="http://blog.bdero.me/tag/visualization.html">visualization</a> <a href="http://blog.bdero.me/tag/webgl.html">webgl</a> </p>
-</footer><!-- /.post-info -->                <p>I thought this might be a good start for something 3D. It's not-so infinite because the terrain doesn't keep regenerating in front of the camera as you move around (which wouldn't even really take that much refactoring), but the camera's height should keep changing according to the noise even after moving far away from the terrain.</p>
-                <a class="readmore" href="http://blog.bdero.me/infinite-simplex-noise-map-3d.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+        <article class="post">
+        <div class="inner">
+            <header class="post-header">         
+                <h2 class="post-title"><a href="../eight-experiments.html" rel="bookmark" title="Permalink to Eight experiments">Eight experiments</a>
+                </h2>
+                <span class="post-meta">
+                        <a href="../author/bdero.html">Bdero</a>
+                     | <time datetime="Mon 25 November 2013">Mon 25 November 2013</time>
+                </span>
+                <div class="clear"></div>
+            </header>
+                <section class="post-excerpt">
+                    <p>
+                        All throughout the development of my weekly experiments so far, there's been a lot of experimentation and learning on my part. Most of the "completed" examples are too fragmented or tiny for their own post, and some of them (especially the...
+                    </p>
+                </section>
+            </div>
+        </article>
+        <article class="post">
+        <div class="inner">
+            <header class="post-header">         
+                <h2 class="post-title"><a href="../infinite-simplex-noise-map-3d.html" rel="bookmark" title="Permalink to (Not-so) infinite simplex noise map in 3D">(Not-so) infinite simplex noise map in 3D</a>
+                </h2>
+                <span class="post-meta">
+                        <a href="../author/bdero.html">Bdero</a>
+                     | <time datetime="Mon 14 October 2013">Mon 14 October 2013</time>
+                </span>
+                <div class="clear"></div>
+            </header>
+                <section class="post-excerpt">
+                    <p>
+                        I thought this might be a good start for something 3D. It's not-so infinite because the terrain doesn't keep regenerating in front of the camera as you move around (which wouldn't even really take that much refactoring), but the camera's height...
+                    </p>
+                </section>
+            </div>
+        </article>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+<nav class="pagination" role="pagination">
+  <div class="inner">
+    <span class="pagination-info">Page 1 / 1</span>
+    <div class="clear"></div>
+  </div>
+</nav>
+  </main>
+</div>
+      <!-- TODO : Body class -->
+    <div id="body-class" style="display: none;" class=""></div>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+    <footer id="footer">
+      <div class="inner">
+        <section class="credits">
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+
+          <span class="credits-theme">Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a></span>
+          <span class="credits-software">Published with <a href="https://github.com/getpelican/pelican" rel="nofollow">Pelican</a></span>
+        </section>
+      </div>
+    </footer>
+  </section>
+
+  <script type="text/javascript" src="../theme/js/script.js"></script>
 
 </body>
 </html>
