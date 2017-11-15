@@ -3,7 +3,7 @@ Date: 2013-11-03 15:49
 Category: Games
 Tags: 2.5d, browser, canvas, gridwars, html5, interactive, ivank.js, javascript, just the basics, particles, prototype, shooter, space, top down, vector graphics, webgl
 Slug: just-the-basics-1
-Authors: Brandon DeRosier
+Authors: bdero
 Summary: During the precious little time I had to work on anything this week, this is what I could come up with. It's the start of something that I'd like to continue taking more time to work on. I want it to be a <a href="http://maxgames.googlecode.com/svn/trunk/vectorzone/" title="GridWars source code" target="_blank">GridWars</a>-like game for browser use, but reserve the freedom to make implementation changes whenever I feel things could be more fun.
 
 During the precious little time I had to work on anything this week, this is what I could come up with. It's the start of something that I'd like to continue taking more time to work on. I want it to be a <a href="http://maxgames.googlecode.com/svn/trunk/vectorzone/" title="GridWars source code" target="_blank">GridWars</a>-like game for browser use, but reserve the freedom to make implementation changes whenever I feel things could be more fun.

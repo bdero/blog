@@ -3,7 +3,7 @@ Date: 2013-10-20 23:27
 Category: Games
 Tags: 2d, browser, canvas, circles, html5, interactive, javascript, jsgamesoup, mini game, minimal, oldie, vector graphics
 Slug: equilibrium
-Authors: Brandon DeRosier
+Authors: bdero
 Summary: Well, that streak quickly came to an end. I was hoping to write new experiments on time to post every week, but time has gotten very tight very fast. Instead, I have something old to share. I banged most of it out during a physics class one day last year right around the time I started feeling sour about my college.
 
 Well, that streak quickly came to an end. I was hoping to write new experiments on time to post every week, but time has gotten very tight very fast. Instead, I have something old to share. I banged most of it out during a physics class one day last year right around the time I started feeling sour about my college. <!--more-->

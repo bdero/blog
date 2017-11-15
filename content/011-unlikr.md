@@ -3,7 +3,7 @@ Date: 2013-12-04 23:28
 Category: Scripts
 Tags: firefox, python, robot, script, selenium, tool, tumblr, unlikr
 Slug: unlikr
-Authors: Brandon DeRosier
+Authors: bdero
 Summary: So, if you're not so much like me, you use Tumblr - and you probably have thousands of likes and reblogs. Of course, your taste for material might change over time.
 
 # **Warning: This probably doesn't work anymore!**

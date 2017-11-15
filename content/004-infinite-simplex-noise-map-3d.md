@@ -3,7 +3,7 @@ Date: 2013-10-14 23:20
 Category: Algorithms
 Tags: 3d, algorithm, browser, canvas, html5, interactive, javascript, minimal, perlin noise, pointer lock controls, quake controls, simplex noise, terrain, three.js, visualization, webgl
 Slug: infinite-simplex-noise-map-3d
-Authors: Brandon DeRosier
+Authors: bdero
 Summary: I thought this might be a good start for something 3D. It's not-so infinite because the terrain doesn't keep regenerating in front of the camera as you move around (which wouldn't even really take that much refactoring), but the camera's height should keep changing according to the noise even after moving far away from the terrain.
 
 I thought this might be a good start for something 3D. It's not-so infinite because the terrain doesn't keep regenerating in front of the camera as you move around (which wouldn't even really take that much refactoring), but the camera's height should keep changing according to the noise even after moving far away from the terrain.

@@ -3,7 +3,7 @@ Date: 2013-10-06 05:53
 Category: Algorithms
 Tags: 2d, algorithm, browser, canvas, html5, iteration, ivank.js, javascript, minimal, perlin noise, plasma, simplex noise, visualization, webgl
 Slug: some-simplex-noise
-Authors: Brandon DeRosier
+Authors: bdero
 Summary: Just a tiny simplex noise test with retro colors. c:
 
 Just a tiny simplex noise test with retro colors. c: <!--more-->

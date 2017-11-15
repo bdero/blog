@@ -3,7 +3,7 @@ Date: 2013-09-22 05:53
 Category: Algorithms
 Tags: 2d, algorithm, browser, canvas, classic, html5, ivank.js, javascript, minimal, puzzle, recursion, tower of hanoi, tweener, vector graphics, visualization, webgl
 Slug: tower-of-hanoi
-Authors: Brandon DeRosier
+Authors: bdero
 Summary: I figured I'd start with something classic.
 
 I figured I'd start with something classic. <!--more-->

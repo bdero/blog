@@ -3,7 +3,7 @@ Date: 2013-12-11 12:00
 Category: Scripts
 Tags: algorithm, animated, browser, he comes, javascript, minidaemon, script, text, zalgo
 Slug: animated-zalgo
-Authors: Brandon DeRosier
+Authors: bdero
 Summary: <script type="text/javascript" src="http://bdero.me/animated-zalgo/hecomes.js"></script>So everyone loves the corrupt appearance of <a href="http://www.marlborotech.com/Zalgo.html" title="Zalgo text generator" target="_blank">Z̹̍ͣ̌a͚̝̮̝̎͞l̞͚̣̣ͭ͐̌͒̒gͬ͆҉̣͎̹̤̱̳̮o͖̣̱̺͔̰͆͜ͅ ̨̤̎́͊̉͒ť̬̯͚̞̕e̷̺̫̝̱̩̯̓̀͑͛̽̆x̼̹̰t̃̂̃ͫ̍̄͂</a>, right? But what about something a little more fun, like.... <div class="hecomes" style="display: block; height: 10px; text-align: center;">animated Zalgo text!</div>
 
 <script type="text/javascript" src="http://bdero.me/animated-zalgo/hecomes.js"></script>So everyone loves the corrupt appearance of <a href="http://www.marlborotech.com/Zalgo.html" title="Zalgo text generator" target="_blank">Z̹̍ͣ̌a͚̝̮̝̎͞l̞͚̣̣ͭ͐̌͒̒gͬ͆҉̣͎̹̤̱̳̮o͖̣̱̺͔̰͆͜ͅ ̨̤̎́͊̉͒ť̬̯͚̞̕e̷̺̫̝̱̩̯̓̀͑͛̽̆x̼̹̰t̃̂̃ͫ̍̄͂</a>, right?

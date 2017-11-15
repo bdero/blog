@@ -3,7 +3,7 @@ Date: 2013-10-24 00:50
 Category: Games
 Tags: 2.5d, browser, canvas, circles, html5, interactive, javascript, mini game, monkey, oldie, particles, vector graphics
 Slug: particle-benchmark
-Authors: Brandon DeRosier
+Authors: bdero
 Summary: This is another oldie - and it's sort of a mini game because, even though there's no real way to win (I just played it by ear without any real planning or direction), it's still interactive in a very game-like way.
 
 <figure>

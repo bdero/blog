@@ -3,7 +3,7 @@ Date: 2013-11-25 22:04
 Category: Experiments
 Tags: 2.5d, 2d, 3d, bitmap graphics, browser, canvas, circles, html5, interactive, iteration, ivank.js, javascript, jsgamesoup, minimal, mobile, oldie, particles, space, three.js, vector graphics, webgl
 Slug: eight-experiments
-Authors: Brandon DeRosier
+Authors: bdero
 Summary: All throughout the development of my weekly experiments so far, there's been a lot of experimentation and learning on my part. Most of the "completed" examples are too fragmented or tiny for their own post, and some of them (especially the <a href="https://github.com/mrdoob/three.js" title="three.js Github repository" target="_blank">Three.js</a> ones) are based off of popular tutorials posted on other blogs. The source code for each of them has been kicking around in the "test" <a href="https://github.com/bdero?tab=repositories" title="cheesekeg.com Gitweb" target="_blank">repositories</a> from the beginning, though.
 
 All throughout the development of my weekly experiments so far, there's been a lot of experimentation and learning on my part. Most of the "completed" examples are too fragmented or tiny for their own post, and some of them (especially the <a href="https://github.com/mrdoob/three.js" title="three.js Github repository" target="_blank">Three.js</a> ones) are based off of popular tutorials posted on other blogs. The source code for each of them has been kicking around in the "test" <a href="https://github.com/bdero?tab=repositories" title="cheesekeg.com Gitweb" target="_blank">repositories</a> from the beginning, though.

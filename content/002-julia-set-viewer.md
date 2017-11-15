@@ -3,7 +3,7 @@ Date: 2013-09-28 23:16
 Category: Algorithms
 Tags: 2d, algorithm, browser, canvas, classic, fractal, html5, interactive, iteration, ivank.js, javascript, julia set, mobile, vector graphics, visualization, webgl
 Slug: julia-set-viewer
-Authors: Brandon DeRosier
+Authors: bdero
 Summary: A little bit of fun with fractals!
 
 A little bit of fun with fractals! <!--more-->

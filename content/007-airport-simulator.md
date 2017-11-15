@@ -3,7 +3,7 @@ Date: 2013-10-27 19:37
 Category: Simulations
 Tags: 2d, bitmap graphics, browser, canvas, html5, ivank.js, minimal, mobile, oldie, simulation, visualization
 Slug: airport-simulator
-Authors: Brandon DeRosier
+Authors: bdero
 Summary: During my sophomore year at college, I was on the lookout to insert graphics into whatever I could to loosen up some monotony. I decided that I would hack on displays to the labs I was doing for one of my classes by using Slick2D (it was basically a Java collections course). I presented in front of the class to show how easy it is to throw a little visual in front of something like this - I even found the I recorded for students explaining how grab the source!
 
 During my sophomore year at college, I was on the lookout to insert graphics into whatever I could to loosen up some monotony. I decided that I would hack on displays to the labs I was doing for one of my classes by using Slick2D (it was basically a Java collections course). I presented in front of the class to show how easy it is to throw a little visual in front of something like this - I even found the I recorded for students explaining how grab the source!

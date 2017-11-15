@@ -3,7 +3,7 @@ Date: 2013-11-12 00:43
 Category: Games
 Tags: 2.5d, browser, canvas, gridwars, html5, interactive, ivank.js, javascript, jsdoc, just the basics, particles, pointer lock controls, prototype, shooter, space, top down, vector graphics, webgl
 Slug: just-the-basics-2
-Authors: Brandon DeRosier
+Authors: bdero
 Summary: It's week two with this thing and I met the goals I set at the last minute as usual. It's now got bullets firing, aiming with or without pointer lock controls, and simple enemies to kill called "Spin Stars". The delta time multiplier is being properly distributed and used with most everything (even with asymptotic functions like camera easing), so if you're running it fullscreen on legacy hardware and you're experiencing significant frame lag, it should still sort of <em>feel</em> like things are the correct speed.
 
 It's week two with this thing and I met the goals I set at the last minute as usual. It's now got bullets firing, aiming with or without pointer lock controls, and simple enemies to kill called "Spin Stars". The delta time multiplier is being properly distributed and used with most everything (even with asymptotic functions like camera easing), so if you're running it fullscreen on legacy hardware and you're experiencing significant frame lag, it should still sort of <em>feel</em> like things are the correct speed.
